@@ -1,0 +1,56 @@
+STABR  02      1   A    †  Two-letter Federal Information Processing Standards  
+    (FIPS) State Code.  See appendix D for list of State  
+    Codes. 
+FSCSKEY  06      3  A  1A  Outlet identification code assigned by NCES.  Outlets of  
+           an administrative entity have the same FSCSKEY as their  
+           administrative entity.  The outlet is separately identified  
+           by a unique 3-digit suffix called FSCS_SEQ.  
+FSCS_SEQ  03     9  A    †  Outlet's unique three-digit suffix to FSCSKEY, assigned  
+                      by NCES.   
+LIBID    20   12  A  01  Outlet identification code assigned by the state.  If the  
+           state did not assign a code, NCES assigns a combination  
+           of FSCSKEY and FSCS_SEQ, separated by a dash (e.g., 
+    AK0003-002).  
+                       
+LIBNAME  60   32  A  02  Name of outlet 
+ADDRESS  35   92  A  03  Complete street address of outlet 
+CITY   20  127  A  04  City or town of outlet 
+ZIP   05  147  A  05  Standard five-digit postal zip code for street address of  
+                      Outlet 
+           M = Missing (unknown, not reported) 
+ZIP4   04  152  A  06  Four-digit postal zip code extension for street address of  
+                      Outlet 
+           M = Missing (unknown, not reported) 
+CNTY   20  156  A  07  County of outlet 
+                       
+PHONE  10  176  A  08  Telephone number of the outlet, in following format: area  
+           code/exchange/number (e.g., 7037315072)   
+           M = Missing (unknown, not reported) 
+                      -3 = Not applicable 
+                       
+C_OUT_TY  02  186  A  09  Outlet Type 
+                      CE–Central Library 
+           BR–Branch Library 
+                      BS–Bookmobile(s) 
+                      BM–Books-by-Mail Only 
+                       
+C_MSA 02  188  A  10  Metropolitan Status Code 
+                      CC–Within the City Limits of the Central City of a  
+                               Metropolitan Area 
+           NC–Metropolitan Area, but Not Within Central City Limits 
+           NO–Not in a Metropolitan Area 
+           M–Missing (unknown, not reported)
+SQ_FEET  08  190  N  11  Area in square feet of the public library outlet.  
+F_SQ_FT  02  198  A   †  SQ_FEET imputation flag.  (See appendix K for   
+    definitions of flags.) 
+   
+L_NUM_BM  02  200  N  12  Number of bookmobiles in the bookmobile outlet record  
+                      (i.e., record with C_OUT_TY = BS) 
+F_BKMOB  02  202  A   †  L_NUM_BM imputation flag.  (See appendix K for   
+    definitions of flags.) 
+PUB_FIPS  02  204  A    †  Two-digit Federal Information Processing Standards  
+    (FIPS) State Code.  See appendix D for list of State  
+    Codes. 
+CNTYFIPS  03  206  A    †  Three-digit FIPS County Code 
+                      M =Missing 
+YR_SUB  04  209  A    †  FSCS submissio

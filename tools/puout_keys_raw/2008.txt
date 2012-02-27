@@ -1,0 +1,158 @@
+STABR 02  1 A  †   Two-letter Federal Information Processing Standards 
+(FIPS) State Code.  (See Appendix D for list of State 
+Codes.)
+FSCSKEY 06  3 A 700          Outlet identification code assigned by IMLS.  Outlets of 
+an administrative entity have the same FSCSKEY as 
+their administrative entity.  The outlet is separately 
+identified by a unique 3-digit suffix called FSCS_SEQ.
+FSCS_SEQ 03  9 A  †   Outlet's unique three-digit suffix to FSCSKEY, assigned 
+by IMLS.
+LIBID 20 12 A 701          Outlet identification code assigned by the state.  If the 
+state did not assign a code, IMLS assigns a combination 
+of FSCSKEY and FSCS_SEQ, separated by a dash 
+(e.g., AK0003-002).
+LIBNAME 60 32 A 702          Name of outlet
+ADDRESS 35 92 A 703          Complete street address of outlet
+CITY 20 127 A 704          City or town of outlet
+ZIP 05 147 A 705          Standard five-digit postal zip code for street address of 
+outlet
+M = Missing (unknown, not reported)
+ZIP4 04 152 A 706          Four-digit postal zip code extension for street address of 
+outlet
+M = Missing (unknown, not reported)
+CNTY 20 156 A 707          County of outlet
+PHONE 10 176 A 708          Telephone number of the outlet, in following format:  
+area code/exchange/number (e.g., 7037315072)
+M = missing (unknown, not reported)
+-3 = Not applicable
+C_OUT_TY 02 186 A 709          Outlet type
+CE–Central Library
+BR–Branch Library
+BS–Bookmobile(s)
+BM–Books-by-Mail Only
+C_MSA 02 188 A 710          Metropolitan Status Code
+CC–Central City
+NC–Metropolitan Area, but not within central city limits
+NO–Not in a Metropolitan Area
+M–Missing (unknown, not reported)
+SQ_FEET 08 190 N 711          Area in square feet of the public library outlet
+F_SQ_FT 04 198 A  †   SQ_FEET imputation flag.  (See Appendix G for 
+definitions of flags.)
+L_NUM_BM 02 202 N 712          Number of bookmobiles in the bookmobile outlet record 
+(i.e., record with C_OUT_TY = BS)
+F_BKMOB 04 204 A  †   L_NUM_BM imputation flag.  (See Appendix G for 
+definitions of flags.)
+PUB_FIPS 02 208 A  †   Two-digit Federal Information Processing Standards 
+(FIPS) State Code.  See Appendix D for list of State 
+Codes.
+CNTYFIPS 03 210 A  †   Three-digit FIPS County Code
+M = Missing
+YR_SUB 04 213 A  †   FSCS submission year of public library data in 4-digit 
+format (YYYY)
+STATSTRU 02 217 A  †   Structure Change Code
+00–No change from last year 
+01–Existing Administrative Entity or Outlet absorbs 
+another Administrative Entity or Outlet
+02–Newly created Administrative Entity or Outlet
+03–Closed
+04–Move Outlet to a newly created Administrative Entity 
+05–Merge two or more Administrative Entities or Outlets 
+to form a new Administrative Entity or Outlet
+06–(reserved)
+07–(reserved)
+08–Restored a closed Administrative Entity or Outlet 
+record 
+09–Restored an incorrectly deleted Administrative Entity 
+or Outlet
+10–Delete an incorrect record 
+11–Outlet moved to different previously existing 
+Administrative Entity
+12–(reserved) 
+13–Add an existing Administrative Entity or Outlet not 
+previously reported
+(Note: This code records structure changes to 
+administrative entities and outlets, and is included on the 
+Public Library Data File and the Public Library Outlet 
+File.  Structure changes include actions such as adding, 
+deleting, or merging administrative entities or outlets. 
+The full list of codes is provided; however, some codes 
+are specific to one of the data files (e.g., code 11 would 
+appear only on the Public Library Outlet Data File).
+STATNAME 02 219 A 702A         Name Change Code
+00–No change from last year
+06–Official name change
+14–Minor name change
+STATADDR 02 221 A 703A         Address Change Code
+00–No change from last year
+07–Moved to a new location
+LONGITUD 11 223 N  †   Longitude. This field consists of a negative sign, three 
+integers and six decimal places, with an explicit decimal 
+point.
+0.000000 - Missing
+LATITUDE 09 234 N  †   Latitude. This field consists of two integers and six 
+decimal places, with an explicit decimal point.
+0.000000 - Missing
+FIPSST 02 243 A  †   Two-digit Federal Information Processing Standards 
+(FIPS) State Code.  (See Appendix D for list of State 
+Codes.)
+00 - Missing
+FIPSCO 03 245 A  †   Three-digit FIPS County Code
+000 - Missing
+FIPSPLAC 05 248 A  †   FIPS Place
+00000 - Missing
+CNTYPOP 08 253 N  †   County Population
+-1 = Missing
+-3 = Not applicable
+LOCALE 02 261 A  †   Urban-centric locale code. The geographic location in 
+terms of the size of the community in which it is located 
+and the proximity of that community to urban and 
+metropolitan areas.
+. –Missing
+11–City, Large: Territory inside an urbanized area and 
+inside a principal city with population of 250,000 or 
+more
+12–City, Mid-size: Territory inside an urbanized area 
+and inside a principal city with a population less than 
+250,000 and greater than or equal to 100,000
+13–City, Small: Territory inside an urbanized area and 
+inside a principal city with a population less than 
+100,000
+21–Suburb, Large: Territory outside a principal city and 
+inside an urbanized area with population of 250,000 
+or more
+22–Suburb, Mid-size: Territory outside a principal city 
+and inside an urbanized area with a population less 
+than 250,000 and greater than or equal to 100,000
+23–Suburb, Small: Territory outside a principal city and 
+inside an urbanized area with a population less than 
+100,000
+31–Town, Fringe: Territory inside an urban cluster that is 
+less than or equal to 10 miles from an urbanized area
+32–Town, Distant: Territory inside an urban cluster that 
+is more than 10 miles and less than or equal to 35 
+miles from an urbanized area
+33–Town, Remote: Territory inside an urban cluster that 
+is more than 35 miles from an urbanized area
+CENTRAC 07 263 N  †   Census Tract.  A small, relatively permanent statistical 
+subdivision of a county or statistically equivalent entity 
+delineated by local participants as part of the Census 
+Bureau’s Participant Statistical Areas Program. This field 
+consists of four integers and two decimals, with an 
+explicit decimal point.
+0 – Missing
+-3 = Not applicable
+CENBLOCK 04 270 N  †   Census Block. An area bounded on all sides by visible 
+features, such as streets, roads, streams, and railroads 
+tracks, and by invisible boundaries, such as city, town, 
+township, and county limits, property lines, and short, 
+imaginary extensions of streets and roads (designated 
+by the Census Bureau).
+0 – Missing
+-3 = Not applicable
+CDCODE 02 274 A  †   Congressional District. FIPS code based on the location 
+of the administrative entity/outlet.  Legislatively defined 
+subdivisions of the state for the purpose of electing 
+representatives to the House of Representatives of the 
+U.S. Congress.
+. - Missing
+MAT_CENT 01 276 A  †   Match Centroid.  The geographic level at which the 

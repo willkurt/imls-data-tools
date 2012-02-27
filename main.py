@@ -10,14 +10,14 @@ if __name__ == "__main__":
     print(testObj.lookup("city"))
     print(testObj.lookup("zip"))
 
-    f2 = open("./data/puout/puout2009.txt",'r')
-    print("counting total public libraries closed in 2009")
+    f2 = open("./data/puout/puout2008.txt",'r')
+    print("counting total public libraries closed in 2008")
     total_closed = 0
     branches_closed = 0
     total = 0
     for line in f2:
         total += 1
-        r = PuoutRecord(line,2009)
+        r = PuoutRecord(line,2008)
         status = r.lookup("statstru")
         if status == "03":
             total_closed += 1

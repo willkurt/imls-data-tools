@@ -1,0 +1,88 @@
+STABR  02   1  A   †    Two-letter Federal Information Processing Standards 
+(FIPS) State Code.  See appendix D for list of State 
+Codes. 
+FSCSKEY  06   3  A  700           Outlet identification code assigned by NCES.  Outlets of 
+an administrative entity have the same FSCSKEY as 
+their administrative entity.  The outlet is separately 
+identified by a unique 3-digit suffix called FSCS_SEQ. 
+FSCS_SEQ  03   9  A   †    Outlet's unique three-digit suffix to FSCSKEY, assigned 
+by NCES. 
+LIBID  20  12  A  701           Outlet identification code assigned by the state.  If the 
+state did not assign a code, NCES assigns a 
+combination of FSCSKEY and FSCS_SEQ, separated 
+by a dash (e.g., AK0003-002). 
+LIBNAME  60  32  A  702           Name of outlet 
+ADDRESS  35  92  A  703           Complete street address of outlet 
+CITY  20  127  A  704           City or town of outlet 
+ZIP  05  147  A  705           Standard five-digit postal zip code for street address of 
+outlet 
+M = Missing (unknown, not reported) 
+ZIP4  04  152  A  706           Four-digit postal zip code extension for street address of 
+outlet 
+M = Missing (unknown, not reported) 
+CNTY  20  156  A  707           County of outlet 
+PHONE  10  176  A  708           Telephone number of the outlet, in following format:  
+area code/exchange/number (e.g., 7037315072) 
+M = missing (unknown, not reported) 
+-3 = Not applicable 
+C_OUT_TY  02  186  A  709           Outlet type 
+CE–Central Library 
+BR–Branch Library 
+BS–Bookmobile(s) 
+BM–Books-by-Mail Only 
+C_MSA  02  188  A  710           Metropolitan Status Code 
+CC–Central City 
+NC–Metropolitan Area, but not within central city limits 
+NO–Not in a Metropolitan Area 
+M–Missing (unknown, not reported) 
+SQ_FEET  08  190  N  711           Area in square feet of the public library outlet 
+F_SQ_FT  02  198  A   †    SQ_FEET imputation flag.  (See appendix J for 
+definitions of flags.) 
+L_NUM_BM  02  200  N  712           Number of bookmobiles in the bookmobile outlet record 
+(i.e., record with C_OUT_TY = BS) 
+F_BKMOB  02  202  A   †    L_NUM_BM imputation flag.  (See appendix J for 
+definitions of flags.) 
+PUB_FIPS  02  204  A   †    Two-digit Federal Information Processing Standards 
+(FIPS) State Code.  See appendix D for list of State 
+Codes. 
+CNTYFIPS  03  206  A   †    Three-digit FIPS County Code 
+M =Missing 
+YR_SUB  04  209  A   †    FSCS submission year of public library data in 4-digit 
+format (YYYY) 
+STATSTRU  02  213  A   †    Structure Change Code 
+00–No change from last year 
+01–Existing Administrative Entity or Outlet absorbs 
+         another Administrative Entity or Outlet 
+02–Newly created Administrative Entity or Outlet 
+03–(reserved) 
+04–Move Outlet to a newly created Administrative Entity
+05–Merge two or more Administrative Entities or Outlets
+         to form a new Administrative Entity or Outlet 
+06–(reserved) 
+07–(reserved) 
+08–Restored a closed Administrative Entity or Outlet 
+         record 
+09–Restored an incorrectly deleted Administrative Entity
+         or Outlet 
+10–(reserved) 
+11–Outlet moved to different previously existing 
+         Administrative Entity 
+12–(reserved) 
+13–Add an existing Administrative Entity or Outlet not 
+         previously reported 
+(Note: This code records structure changes to 
+administrative entities and outlets, and is included on 
+the Public Library Data File and the Public Library Outlet 
+File.  Structure changes include actions such as adding, 
+deleting, or merging administrative entities or outlets.  
+The full list of codes is provided; however, some codes 
+are specific to one of the files (e.g., code 11 would 
+appear only on the Public Library Outlet Data File). 
+STATNAME  02  215  A  702A          Name Change Code 
+00–No change from last year 
+06–Official name change 
+14–Minor name change 
+STATADDR  02  217  A  703A          Address Change Code 
+00–No change from last year 
+07–Moved to a new location 
+15–Minor address change 
