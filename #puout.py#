@@ -1,0 +1,14 @@
+
+
+
+class PuoutRecord(object):
+    """
+    A class for processing the Record Layout for Public Library Outlet Data File from
+    The Institue of Museum and Library Studies.
+    
+    Futher information can be found in this file:
+    https://harvester.census.gov/imls/pubs/Publications/fy2009_pls_database_documentation.pdf
+    """
+
+    def __init__(self,record_string):
+        self.record_string = 
