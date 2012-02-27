@@ -1,0 +1,17 @@
+LICENSE
+
+Copyright (c) 2012 William Kurt
+ 
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+ABOUT
+
+I've been creating some tools to help process some public library data from the Institute of Museum and library services.  The tools in this collection are mainly for processing data found in the various formats found in the 'data files' section of this site http://www.imls.gov/research/public_libraries_in_the_united_states_survey.aspx
+
+These tools are far from perfect, but I wanted to share as much of the work I'm doing with others, feel free to use these tools as you see fit.
+
+Visualizations created from these tools will most likely end up on my 'Library Data' blog: library.tumblr.com
