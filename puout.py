@@ -13,6 +13,7 @@ class PuoutRecord(object):
     # rather than process all of these on object creation
     # we just do a lookup each time we need one
     # fieldname (length,offset)
+    # DEAR GOD THIS ONLY WORKS FOR 2009! Each year is different :\
     fields = {
         # Two-letter Federal Information Processing Standards 
         # (FIPS) State Code
