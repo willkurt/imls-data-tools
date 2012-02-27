@@ -10,7 +10,7 @@ if __name__ == "__main__":
     print(testObj.lookup("city"))
     print(testObj.lookup("zip"))
 
-    f2 = open("./data/puout/puout2009.txt",'r')
+    f2 = open("./data/puout/puout2006.txt",'r')
     print("counting total public libraries closed in 2009")
     total_closed = 0
     branches_closed = 0
