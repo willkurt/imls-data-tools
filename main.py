@@ -1,9 +1,9 @@
-from puout import PuoutRecord
+from imlsrecord import IMLSRecord
 
 if __name__ == "__main__":
     print("sanity check for PuoutRecord")
     f = open("./data/puout/puout2009.txt",'r')
-    testObj = PuoutRecord(f.readline(),2009)
+    testObj = IMLSRecord(f.readline(),"puout",2009)
     print("Print Name and address for test library")
     print(testObj.lookup("libname"))
     print(testObj.lookup("address"))
@@ -17,7 +17,7 @@ if __name__ == "__main__":
     total = 0
     for line in f2:
         total += 1
-        r = PuoutRecord(line,2008)
+        r = IMLSRecord(line,"puout",2008)
         status = r.lookup("statstru")
         if status == "03":
             total_closed += 1
@@ -25,5 +25,5 @@ if __name__ == "__main__":
                 branches_closed += 1
     print("Total closed: "+str(total_closed))
     print("Branches closed: "+str(branches_closed))
-    p =  total_closed/total*100.00
+    print("total: "+str(total))
 

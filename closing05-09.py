@@ -1,4 +1,4 @@
-from puout import PuoutRecord
+from imlsrecord import IMLSRecord
 
 if __name__ == "__main__":
     print("total closing/year 2005-2009")
@@ -9,7 +9,7 @@ if __name__ == "__main__":
         total = 0
         for line in f:
             total += 1
-            r = PuoutRecord(line,year)
+            r = IMLSRecord(line,"puout",year)
             status = r.lookup("statstru")
             if status == "03":
                 total_closed += 1
