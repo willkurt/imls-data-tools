@@ -11,9 +11,12 @@ class IMLSDataFile(object):
     def __init__(self,rtype,year):
         f = open(IMLSConst.DATA_PATH.format(rtype,year),'r')
         self.records = []
+        self.record_dict = {}
         for line in f.readlines():
-            self.records.append(IMLSRecord(line,rtype,year))
-        
+            rec = IMLSRecord(line,rtype,year)
+            self.records.append(rec)
+            #this might be specific to puout format, be carful
+            self.record_dict[rec.lookup("FSCSKEY")] = rec
 
     
     def select_all(self,field_name):
@@ -29,8 +32,13 @@ class IMLSDataFile(object):
     
     #assumes numeric data
     #calculates a float
+    #also it breaks stupid easy... needs more regex ;)
     def sum(self,field_name):
         total = 0
         for r in self.records:
             total += float(r.lookup(field_name))
                  
+
+    def id_lookup(self,fscskey,key):
+        return self.record_dict[fscskey].lookup(key)
+                  
