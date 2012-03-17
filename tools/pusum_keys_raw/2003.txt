@@ -1,0 +1,199 @@
+STABR  02       1  A    †  Two-letter Federal Information Processing Standards  
+    (FIPS) State Code.  See appendix D for list of State  
+    Codes. 
+                      POPULATION 
+POPU_LSA  10      3  N  22  Population of the legal service area 
+F_POPLSA  02    13  A    †  POPU_LSA imputation flag.  (See appendix J for   
+                      definitions of flags.)    
+POPU_UND  10    15  N  04  Total unduplicated population of legal service areas. 
+           (Note:  This is a single, state-reported figure.  This item is  
+           on the State Characteristics data entry screen.) 
+F_POPUND  02    25  A    †  POPU_UND imputation flag.  (See appendix J for   
+                      definitions of flags.)    
+POPU_ST  10    27  N  03  Official state total population estimate (Note:  This item is  
+           on the State Characteristics data entry screen.) 
+F_POPST  02    37  A    †  POPU_ST imputation flag.  (See appendix J for   
+    definitions of flags.)     
+                      SERVICE OUTLETS 
+CENTLIB  05    39  N  23  Number of central libraries 
+F_CENLIB  02    44  A    †  CENTLIB imputation flag.  (See appendix J for definitions 
+    of flags.)     
+BRANLIB  05    46  N  24  Number of branch libraries 
+F_BRLIB  02    51  A    †  BRANLIB imputation flag.  (See appendix J for definitions 
+    of flags.)     
+BKMOB  05    53  N  25  Number of bookmobiles 
+F_BKMOB  02    58  A    †  BKMOB imputation flag.  (See appendix J for definitions  
+    of flags.)     
+                      FULL-TIME EQUIVALENT (FTE) PAID STAFF 
+MASTER  11    60  N  26  ALA-MLS Librarians.  Number of FTE paid librarians 
+with master’s degrees from programs of library and  
+information studies accredited by the American Library 
+Association. This field consists of eight integers and two 
+decimals, with an explicit decimal point.  
+F_MASTER  02    71  A    †  MASTER imputation flag.  (See appendix J for definitions 
+                    of flags.)     
+  
+LIBRARIA  11    73  N  27  Total number of F
+F_LIBRAR  02    84  A    †  LIBRARIA imputation flag.  (See appendix J for definitions 
+                    of flags.)     
+OTHPAID  11    86  N  28  All other paid FTE employees.  This field consists of  
+           eight integers and two decimals with an explicit decimal  
+                      point. 
+F_OTHSTF  02    97  A    †  OTHPAID imputation flag.  (See appendix J for definitions
+                       of flags.)     
+TOTSTAFF  12    99  N  29  Total paid FTE employees (i.e., LIBRARIA and   
+    OTHPAID).  This field consists of nine integers and two  
+    decimals with an explicit decimal point.   
+F_TOTSTF  02   111  A    †  TOTSTAFF imputation flag.  (See appendix J for   
+    definitions of flags.)   
+                       
+                      OPERATING REVENUE 
+LOCGVT  11   113  N  30  Operating revenue from local government 
+F_LOCGVT   02   124  A    †  LOCGVT imputation flag.  (See appendix J for definitions 
+                    of flags.)  
+STGVT  11   126  N  31  Operating revenue from state government 
+F_STGVT  02   137  A    †  STGVT imputation flag.  (See appendix J for definitions  
+                    of flags.) 
+FEDGVT  11   139  N  32  Operating revenue from federal government 
+F_FEDGVT  02   150  A    †  FEDGVT imputation flag.  (See appendix J for definitions 
+    of flags.) 
+OTHINCM  11   152  N  33  Other operating revenue (i.e., revenue not included in  
+           LOCGVT, STGVT, and FEDGVT) 
+F_OTHINC  02   163  A    †  OTHINCM imputation flag.  (See appendix J for definitions 
+                      of flags.) 
+TOTINCM  12   165  N  34  Total operating revenue (i.e., LOCGVT, STGVT, FEDGVT,  
+           and OTHINCM) 
+F_TOTINC  02   177  A    †  TOTINCM imputation flag.  (See appendix J for definitions 
+    of flags.) 
+                      OPERATING EXPENDITURES 
+                      Staff expenditures 
+SALARIES  11   179  N  35  Salaries and wages for all library staff 
+F_SALX  02   190  A    †  SALARIES imputation flag.  (See appendix J for   
+                      definitions of flags.) 
+BENEFIT  11   192  N  36  Employee benefits for all library staff 
+F_BENX  02   203  A    †  BENEFIT imputation flag.  (See appendix J for definitions 
+    of flags.) 
+STAFFEXP  11   205  N  37  Total staff exp
+F_TOSTFX  02   216  A     †  STAFFEXP imputation flag.  (See appendix J for   
+                      definitions of flags.) 
+                      Collection expenditures 
+PRMATEXP  09   218  N  38  Operating expenditures for print materials (including  
+    books, serial back files, current serial subscriptions,  
+    government documents) 
+F_PRMATX  02   227  A    †  PRMATEXP imputation flag.  (See appendix J for   
+    definitions of flags.) 
+ELMATEXP  09   229  N  39  Operating expenditures for electronic (digital) materials 
+           (including e-books, e-serials, government documents,  
+            databases, electronic files, reference tools, scores, maps, 
+           and pictures)  
+F_ELMATX  02   238  A    †  ELMATEXP imputation flag.  (See appendix J for   
+                      definitions of flags.) 
+OTHMATEX  09   240  N  40  Operating expenditures for all other library materials 
+           (microform, audio, video, DVD, and new formats) 
+F_OTMATX  02   249  A    †  OTHMATEX imputation flag.  (See appendix J for   
+    definitions of flags.) 
+TOTEXPCO   11   251  N  41  Total expenditures on library collection (i.e., PRMATEXP, 
+           ELMATEXP, and OTHMATEX) 
+F_TOCOLX  02   262  A    †  TOTEXPCO imputation flag.  (See appendix J for   
+                      definitions of flags.) 
+                      Other operating expenditures 
+OTHOPEXP   11   264  N  42  Other operating expenditures (i.e., expenditures not  
+           included in STAFFEXP and TOTEXPCO) 
+F_OTHOPX  02   275  A    †  OTHOPEXP imputation flag.  (See appendix J for   
+    definitions of flags.) 
+TOTOPEXP   12   277  N  43  Total operating expenditures (i.e., STAFFEXP,  
+           TOTEXPCO, and OTHOPEXP) 
+F_TOTOPX  02    289  A    †  TOTOPEXP imputation flag.  (See appendix J for   
+                      definitions of flags.) 
+                      CAPITAL  
+CAP_REV  11   291  N  44  Capital revenue for major capital expenditures 
+F_TCAPRV  02   302  A    †  CAP_REV imputation flag.  (See appendix J for   
+                      definitions of flags.) 
+CAPITAL  11   304  N  45  Capital expenditures (major) 
+F_TCAPX  02   315  A    †  CAPITAL imputation flag.  (See appendix J for definitions 
+    of flags.) 
+                      LIBRARY COLLECTION 
+BKVOL  11   317  N  46  Print materi
+F_BKVOL  02   328  A    †  BKVOL imputation flag.  (See appendix J for definitions  
+                    of flags.) 
+EBOOK  09   330  N  47  Electronic books (E-books) (digital documents, including  
+    non-serial government documents in digital format) 
+F_EBOOK  02   339  A    †  EBOOK imputation flag.  (See appendix J for definitions  
+    of flags.) 
+AUDIO  11   341  N  48  Audio materials (including records, audiocassettes, audio 
+    cartridges, audio discs—including audio-CD-ROMS,  
+    audio reels, talking books, and other sounding recordings) 
+F_AUDIO  02   352  A    †  AUDIO imputation flag.  (See appendix J for definitions  
+    of flags.) 
+VIDEO  11   354  N  49  Video materials (including video tapes, DVDs, video CD- 
+    ROMs, etc.) 
+F_VIDEO  02   365  A    †  VIDEO imputation flag.  (See appendix J for definitions  
+    of flags.) 
+DATABASE  09   367  N  50  Databases (locally mounted or remote, full-text   
+           or not, for which temporary or permanent access rights  
+           have been acquired) 
+F_DBASE  02   376  A    †  DATABASE imputation flag.  (See appendix J for   
+                      definitions of flags.) 
+SUBSCRIP  11   378  N  51  Current print serial subscriptions 
+F_PRSUB  02   389  A     †  SUBSCRIP imputation flag.  (See appendix J for   
+                      definitions of flags.) 
+ESUBSCRP  09   391  N  52  Current electronic serial subscriptions 
+F_ESUB  02   400  A    †  ESUBSCRP imputation flag.  (See appendix J for   
+                      definitions of flags.) 
+                      PUBLIC SERVICE HOURS 
+HRS_OPEN   11   402  N  53  Total annual public service hours for all service outlets 
+F_HRS_OP  02   413  A    †  HRS_OPEN imputation flag.  (See appendix J for   
+                      definitions of flags.) 
+                      LIBRARY SERVICES 
+VISITS  11   415  N  54  Total annual library visits 
+F_VISITS  02   426  A    †  VISITS imputation flag.  (See appendix J for definitions  
+                      of flags.) 
+REFERENC   11   428  N  55  Total annual reference transactions 
+F_REFER  02   439  A    †  REFERE
+TOTCIR  11   441  N  56  Total annual circulation transactions 
+F_TOTCIR  02   452  A    †  TOTCIR imputation flag.  (See appendix J for definitions  
+    of flags.) 
+                      INTER-LIBRARY LOANS 
+LOANTO  08   454  N  57  Total annual loans provided to other libraries 
+F_LOANTO  02   462  A    †  LOANTO imputation flag.  (See appendix J for definitions 
+    of flags.) 
+LOANFM  08   464  N  58  Total annual loans received from other libraries 
+F_LOANFM  02   472  A    †  LOANFM imputation flag.  (See appendix J for definitions 
+    of flags.) 
+                      CHILDREN'S SERVICES 
+KIDCIRCL  09   474  N  59  Total annual circulation (including renewals) of all  
+                      children's materials in all formats to all users 
+F_KIDCIR  02   483  A    †  KIDCIRCL imputation flag.  (See appendix J for   
+    definitions of flags.) 
+KIDATTEN   09   485  N  60  Total annual attendance at all programs intended  
+           primarily for children.  Includes adults who attend  
+           programs intended primarily for children.  
+F_KIDATT  02   494  A    †  KIDATTEN imputation flag.  (See appendix J for   
+     definitions of flags.) 
+                      ELECTRONIC TECHNOLOGY 
+GPTERMS  06   496  N  61  Internet terminals used by general public 
+F_GPTERM  02   502  A    †  GPTERMS imputation flag.  (See appendix J for   
+          definitions of flags.) 
+ERES_USR  09   504  N  62  Users of electronic resources per typical week 
+F_ER_USR  02   513  A    †  ERES_USR imputation flag.  (See appendix J for   
+                      definitions of flags.) 
+                      OTHER 
+STARTDAT  07   515  A  01  Reporting period starting date, in month/year format  
+           (e.g., 07/2002).  (Note:  This item is on the State  
+           Characteristics data entry screen.)  
+F_STDAT  02   522  A    †  STARTDAT imputation flag.  (See appendix J for   
+    definitions of flags.) 
+ENDDATE  07   524  A  02  Reporting period ending date, in month/year format 
+           (e.g., 06/2003).  (Note:  This item is on the State  
+           Characteristics data entry screen.)  
+F_ENDDAT  02   531  A    †  ENDDAT
+PUB_FIPS  02   533  A    †  Two-digit Federal Information Processing Standards  
+    (FIPS) State Code.  See appendix D for list of State 
+    Codes. 
+YR_SUB  04   535  A    †  FSCS submission year of public library data in 4-digit  
+           format (YYYY)  
+OBEREG  02   539  A    †  Bureau of Economic Analysis Code (formerly, Office of  
+           Business Economics)  
+           01–New England (CT ME MA NH RI VT) 
+           02–Mid East (DE DC MD NJ NY PA) 
+           03–Great L

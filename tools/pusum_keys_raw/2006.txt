@@ -1,0 +1,232 @@
+STABR  02   1  A   †    Two-letter Federal Information Processing Standards 
+(FIPS) State Code.  See appendix D for list of State 
+Codes. 
+POPULATION 
+POPU_LSA  10   3  N  208           Population of the legal service area 
+F_POPLSA  02  13  A               POPU_LSA imputation flag.  (See appendix I for 
+definitions of flags.) 
+POPU_UND  10  15  N  103           Total unduplicated population of legal service areas.  
+(Note:  This is a single, state-reported figure.  This item 
+is on the State Characteristics data entry screen.) 
+F_POPUND  02  25  A   †    POPU_UND imputation flag.  (See appendix I for 
+definitions of flags.) 
+POPU_ST  10  27  N  102           Official state total population estimate.  (Note:  This item 
+is on the State Characteristics data entry screen.) 
+F_POPST  02  37  A   †    POPU_ST imputation flag.  (See appendix I for 
+definitions of flags.) 
+SERVICE OUTLETS 
+CENTLIB  05  39  N  209           Number of central libraries 
+F_CENLIB  02  44  A   †    CENTLIB imputation flag.  (See appendix I for 
+definitions of flags.) 
+BRANLIB  05  46  N  210           Number of branch libraries 
+F_BRLIB  02  51  A   †    BRANLIB imputation flag.  (See appendix I for 
+definitions of flags.) 
+BKMOB  05  53  N  211           Number of bookmobiles 
+F_BKMOB  02  58  A   †    BKMOB imputation flag.  (See appendix I for definitions 
+of flags.) 
+FULL-TIME EQUIVALENT (FTE) PAID STAFF 
+MASTER  11  60  N  250           "ALA-MLS" Librarians.  Number of FTE paid librarians 
+with master's degrees from programs of library and 
+information studies accredited by the American Library 
+Association.  This field consists of eight integers and two 
+decimals, with an explicit decimal point. 
+F_MASTER  02  71  A   †    MASTER imputati
+LIBRARIA  11  73  N  251           Total number of FTE employees holding the title of 
+librarian.  This field consists of eight integers and two 
+decimals, with an explicit decimal point. 
+F_LIBRAR  02  84  A   †    LIBRARIA imputation flag.  (See appendix I for 
+definitions of flags.) 
+OTHPAID  11  86  N  252           All other paid FTE employees.  This field consists of 
+eight integers and two decimals with an explicit decimal 
+point. 
+F_OTHSTF  02  97  A   †    OTHPAID imputation flag.  (See appendix I for 
+definitions of flags.) 
+TOTSTAFF  12  99  N  253           Total paid FTE employees (i.e., sum of LIBRARIA and 
+OTHPAID).  This field consists of nine integers and two 
+decimals with an explicit decimal point. 
+F_TOTSTF  02  111  A   †    TOTSTAFF imputation flag.  (See appendix I for 
+definitions of flags.) 
+OPERATING REVENUE 
+LOCGVT  11  113  N  300           Operating revenue from local government 
+F_LOCGVT  02  124  A   †    LOCGVT imputation flag.  (See appendix I for definitions 
+of flags.) 
+STGVT  11  126  N  301           Operating revenue from state government 
+F_STGVT  02  137  A   †    STGVT imputation flag.  (See appendix I for definitions 
+of flags.) 
+FEDGVT  11  139  N  302           Operating revenue from federal government 
+F_FEDGVT  02  150  A   †    FEDGVT imputation flag.  (See appendix I for definitions 
+of flags.) 
+OTHINCM  11  152  N  303           Other operating revenue (i.e., revenue not included in 
+LOCGVT, STGVT, and FEDGVT) 
+F_OTHINC  02  163  A   †    OTHINCM imputation flag.  (See appendix I for 
+definitions of flags.) 
+TOTINCM  12  165  N  304           Total operating revenue (i.e., sum of LOCGVT, STGVT, 
+FEDGVT, and OTHINCM) 
+F_TOTINC  02  177  A   †    TOTINCM imputation flag.  (See appendix I for 
+definitions of flags.) 
+OPERATING EXPENDITURES 
+Staff expenditures 
+SALARIES  11  179  N  350           Salaries and wages for all library staff 
+F_SALX  02  190  A   †    SALARIES imputation
+BENEFIT  11  192  N  351           Employee benefits for all library staff 
+F_BENX  02  203  A   †    BENEFIT imputation flag.  (See appendix I for 
+definitions of flags.) 
+STAFFEXP  11  205  N  352           Total staff expenditures (i.e., sum of SALARIES and 
+BENEFIT) 
+F_TOSTFX  02  216  A   †    STAFFEXP imputation flag.  (See appendix I for 
+definitions of flags.) 
+Collection expenditures 
+PRMATEXP  09  218  N  353           Operating expenditures for print materials (including 
+books, serial back files, current serial subscriptions, 
+government documents, and any other print 
+acquisitions) 
+F_PRMATX  02  227  A   †    PRMATEXP imputation flag.  (See appendix I for 
+definitions of flags.) 
+ELMATEXP  09  229  N  354           Operating expenditures for electronic (digital) materials 
+(including e-books, e-serials, government documents, 
+databases, electronic files, reference tools, scores, 
+maps, or pictures, including materials digitized by the 
+library) 
+F_ELMATX  02  238  A   †    ELMATEXP imputation flag.  (See appendix I for 
+definitions of flags.) 
+OTHMATEX  09  240  N  355           Operating expenditures for other library materials 
+(microform, audio, video, DVD, and new formats) 
+F_OTMATX  02  249  A   †    OTHMATEX imputation flag.  (See appendix I for 
+definitions of flags.) 
+TOTEXPCO  11  251  N  356           Total expenditures on library collection (i.e., sum of 
+PRMATEXP, ELMATEXP, and OTHMATEX) 
+F_TOCOLX  02  262  A   †    TOTEXPCO imputation flag.  (See appendix I for 
+definitions of flags.) 
+Other operating expenditures 
+OTHOPEXP  11  264  N  357           Other operating expenditures (I.e., operating 
+expenditures not included in STAFFEXP and 
+TOTEXPCO) 
+F_OTHOPX  02  275  A   †    OTHOPEXP imputation flag.  (See appendix I for 
+definitions of flags.) 
+TOTOPEXP  12  277  N  358           Total operating expenditures (i.e., sum of STAFFEXP, 
+TOTEXPCO, and OTHOPEXP) 
+F_TOTOPX  02  289  A   †    TOTOPEXP im
+LCAP_REV  10  291  N  400           Local government capital revenue 
+F_LCAPRV  02  301  A   †    LCAP_REV imputation flag.  (See appendix I for 
+definitions of flags.) 
+SCAP_REV  10  303  N  401           State government capital revenue 
+F_SCAPRV  02  313  A   †    SCAP_REV imputation flag.  (See appendix I for 
+definitions of flags.) 
+FCAP_REV  10  315  N  402           Federal government capital revenue 
+F_FCAPRV  02  325  A   †    FCAP_REV imputation flag.  (See appendix I for 
+definitions of flags.) 
+OCAP_REV  10  327  N  403           Other capital revenue (i.e., capital revenue not included 
+in LCAP_REV, SCAP_REV, and FCAP_REV) 
+F_OCAPRV  02  337  A   †    OCAP_REV imputation flag.  (See appendix I for 
+definitions of flags.) 
+CAP_REV  11  339  N  404           Total capital revenue (I.e., sum of LCAP_REV, 
+SCAP_REV, FCAP_REV, and OCAP_REV) 
+F_TCAPRV  02  350  A   †    CAP_REV imputation flag.  (See appendix I for 
+imputation flags.) 
+CAPITAL EXPENDITURES 
+CAPITAL  11  352  N  405           Total capital expenditures 
+F_TCAPX  02  363  A   †    CAPITAL imputation flag.  (See appendix I for definitions 
+of flags.) 
+LIBRARY COLLECTION 
+BKVOL  11  365  N  450           Print materials (including books, serial back files, and 
+government documents) 
+F_BKVOL  02  376  A   †    BKVOL imputation flag.  (See appendix I for definitions 
+of flags.) 
+EBOOK  09  378  N  451           Electronic books (E-books) (digital documents, including 
+non-serial government documents in digital format) 
+F_EBOOK  02  387  A   †    EBOOK imputation flag.  (See appendix I for definitions 
+of flags.) 
+AUDIO  11  389  N  452           Audio materials (including
+F_AUDIO  02  400  A 
+   
+†    AUDIO imputation flag.  (See appendix I for definitions 
+of flags.) 
+VIDEO  11  402  N  453           Video materials (including video tapes, DVDs, video CDROMs, etc.) 
+F_VIDEO  02  413  A   †    VIDEO imputation flag.  (See appendix I for definitions 
+of flags.) 
+LICENSED DATABASES 
+DB_LOC  09  415  N  454           Local licensed databases 
+F_DB_LOC  02  424  A   †    DB_LOC imputation flag.  (See appendix I for definitions 
+of flags.) 
+DB_ST  09  426  N  455           State (state government or state library) licensed 
+databases 
+F_DB_ST  02  435  A   †    F_DB_ST imputation flag.  (See appendix I for 
+definitions of flags.) 
+DB_OTH  09  437  N  456           Other licensed databases (cooperative agreements or 
+consortia within state or region 
+F_DB_OTH  02  446  A   †    F_DB_OTH imputation flag.  (See appendix I for 
+definitions of flags.) 
+DATABASE  09  448  N  457           Total Licensed Databases 
+F_DBASE  02  457  A   †    DATABASE imputation flag.  (See appendix I for 
+definitions of flags.) 
+SUBSCRIP  11  459  N  455           Current print serial subscriptions 
+F_PRSUB  02  470  A   †    SUBSCRIP imputation flag.  (See appendix I for 
+definitions of flags.) 
+ESUBSCRP  09  472  N  456           Current electronic serial subscriptions 
+F_ESUB  02  481  A   †    ESUBSCRP imputation flag.  (See appendix I for 
+definitions of flags.) 
+PUBLIC SERVICE HOURS 
+HRS_OPEN  11  483  N  500           Total annual public service hours for all service outlets 
+F_HRS_OP  02  494  A   †    HRS_OPEN imputation flag.  (See appendix I for 
+definitions of flags.) 
+LIBRARY SERVICES 
+VISITS  11  496  N  501           Total annual library visits 
+F_VISITS  02  507  A   †    VISITS imputation flag.  (See appe
+REFERENC  11  509  N  502           Total annual reference transactions 
+F_REFER  02  520  A   †    REFERENC imputation flag.  (See appendix I for 
+definitions of flags.) 
+REGBOR  11  522  N  503           Registered Borrowers 
+F_REGBOR  02  533  N   †    F_REGBOR imputation flag.  (See appendix I for 
+definitions of flags.) 
+CIRCULATION 
+TOTCIR  11  535  N  550           Total annual circulation transactions 
+F_TOTCIR  02  546  A   †    TOTCIR imputation flag.  (See appendix I for definitions 
+of flags.) 
+KIDCIRCL  09  548  N  551           Total annual circulation (including renewals) of all 
+children's materials in all formats to all users 
+F_KIDCIR  02  557  A   †    KIDCIRCL imputation flag.  (See appendix I for 
+definitions of flags.) 
+INTER-LIBRARY LOANS 
+LOANTO  08  559  N  552           Total annual loans provided to other libraries 
+F_LOANTO  02  567  A   †    LOANTO imputation flag.  (See appendix I for definitions 
+of flags.) 
+LOANFM  08  569  N  553           Total annual loans received from other libraries 
+F_LOANFM  02  577  A   †    LOANFM imputation flag.  (See appendix I for definitions 
+of flags.) 
+LIBRARY PROGRAMS 
+TOTPRO  09  579  N  600           Total library programs 
+F_TOTPRO  02  588  A   †    TOTPRO imputation flag.  (See appendix I for definitions 
+of flags.) 
+KIDPRO  09  590  N  601           Total children's programs 
+F_KIDPRO  02  599  A   †    KIDPRO imputation flag.  (See appendix I for definitions 
+of flags.) 
+TOTATTEN  09  601  N  602           Total audience at all library programs 
+F_TOTATT  02  610  A   †    TOTATTEN imputation flag.  (See appendix I for 
+definitions of flags.) 
+KIDATTEN  09  612  N  603           Total audience at all children's programs 
+F_KIDATT  02  621  A   †    KIDATTEN imputation flag
+GPTERMS  06  623  N  650           Internet terminals used by general public 
+F_GPTERM  02  629  A   †    GPTERMS imputation flag.  (See appendix I for 
+definitions of flags.) 
+PITUSR  09  631  N  651           Users of public internet computers per year 
+F_PITUSR  02  640  A   †    PITUSR imputation flag.  (See appendix I for definitions 
+of flags.) 
+OTHER 
+STARTDAT  07  642  A  100           Reporting period starting date, in mm/yyyy format (e.g., 
+07/2005).  (Note:  This item is on the State 
+Characteristics data entry screen.) 
+F_STDAT  02  649  A   †    STARTDAT imputation flag.  (See appendix I for 
+definitions of flags.) 
+ENDDATE  07  651  A  101           Reporting period ending date, in mm/yyyy format (e.g., 
+06/2006).  (Note:  This item is on the State 
+Characteristics data entry screen.) 
+F_ENDDAT  02  658  A   †    ENDDATE imputation flag.  (See appendix I for 
+definitions of flags.) 
+PUB_FIPS  02  660  A   †    Two-digit Federal Information Processing Standards 
+(FIPS) State Code.  See appendix D for list of State 
+Codes. 
+YR_SUB  04  662  A   †    FSCS submission year of public library data in 4-digit 
+format (YYYY) 
+OBEREG  02  666  A   †    Bureau of Economic Analysis Code (formerly, Office of 
+Business Economics) 
+01–New E

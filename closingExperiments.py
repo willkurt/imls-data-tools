@@ -5,15 +5,20 @@ rtype = "puout"
 
 #just playing with some sample years
 
-d2008 = IMLSDataFile(rtype,2008) 
-d1998 = IMLSDataFile(rtype,1998) 
+for i in range(2008,2009):
+    d1 = IMLSDataFile(rtype,i)
+    d2 = IMLSDataFile(rtype,i+1)
+    s1 = d1.select_all_s("FSCSKEY")
+    s2 = d2.select_all_s("FSCSKEY")
+    diff = s1.difference(s2)
+#    print(diff)
+    print("missing from record {0}".format(i))
+    for i in diff:
+        name = d1.id_lookup(i,"LIBNAME")
+        city = d1.id_lookup(i,"CITY")
+        state = d1.id_lookup(i,"STABR")
+        print("{0} - {1},{2}".format(name.strip(),city.strip(),state))
+                            
+#    print("missing {0}-{1}: {2}".format(i,i+1,len(diff)))
 
 
-s2008 = d2008.select_all_s("FSCSKEY")
-s1998 = d1998.select_all_s("FSCSKEY")
-
-
-missingLibs = s1998.difference(s2008)
-for ml in missingLibs:
-    print(d1998.id_lookup(ml,"libname"))
-print("missing {0} libs".format(len(missingLibs)))

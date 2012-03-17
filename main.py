@@ -1,7 +1,7 @@
 from imlsrecord import IMLSRecord
 
 if __name__ == "__main__":
-    print("sanity check for PuoutRecord")
+    print("sanity check for IMLSRecord")
     f = open("./data/puout/puout2009.txt",'r')
     testObj = IMLSRecord(f.readline(),"puout",2009)
     print("Print Name and address for test library")
@@ -20,6 +20,9 @@ if __name__ == "__main__":
         r = IMLSRecord(line,"puout",2008)
         status = r.lookup("statstru")
         if status == "03":
+            print("{0} {1},{2}".format(r.lookup("libname").strip(),
+                                        r.lookup("city").strip(),
+                                        r.lookup("stabr")))
             total_closed += 1
             if r.lookup("c_out_ty") == "BR":
                 branches_closed += 1

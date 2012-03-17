@@ -1,0 +1,320 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf360
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f0\fs24 \cf0 STABR  02     1  A    \'86   Two-letter Federal Information Processing Standards  \
+           (FIPS) State Code.  See appendix D for list of State  \
+           Codes. \
+   \
+FSCSKEY  06     3  A    \'86   Library identification code assigned by NCES \
+LIBID    20     9  A  01  Library identification code assigned by the state.  NCES \
+          assigns the FSCSKEY to this field if the state did not \
+          assign a code. \
+LIBNAME  60    29  A  02  Name of library (administrative entity) \
+            STREET ADDRESS  \
+ADDRESS  35    89  A  03  Street address of administrative entity \
+CITY   20  124  A  04  City or town (of street address) of administrative entity  \
+ZIP   05  144  A  05  Standard five-digit postal zip code (of street address) of  \
+       administrative entity.   \
+           M = Missing (unknown, not reported) \
+ZIP4   04  149  A  06  Four-digit postal zip code extension (of street address)  \
+    of administrative entity.  \
+           M = Missing (unknown, not reported) \
+                      MAILING ADDRESS \
+ADDRES_M  35  153  A  07  Mailing address of administrative entity \
+CITY_M  20  188  A  08  City or town (of mailing address) of administrative entity \
+ZIP_M  05  208  A  09  Standard five-digit postal zip code (of mailing address) of \
+       administrative entity  \
+           M = Missing (unknown, not reported) \
+ZIP4_M  04  213  A  10  Four-digit postal zip code extension (of mailing address)  \
+    of administrative entity  \
+           M = Missing (unknown, not reported) \
+CNTY   20  217  A  11  County of library \
+PHONE  10  237  A  12  Telephone number, in following format:  area \
+           code/exchange/number (for example, 7037315072) \
+           M = Missing (unknown, not reported) \
+                      -3 = Not applicable \
+WEB_ADDR 80  247  A  13  Web address of the administrative entity.\
+C_RELATN   02  327  A  14  Interlibrary Relationship Code \
+           HQ\'96Headquarters of a federation or cooperative \
+           ME\'96Member of a federation or cooperative \
+           NO\'96Not a member of a federation or cooperative  \
+C_LEGBAS   02  329  A  15  Legal Basis Code \
+           CC\'96City/County \
+           CI\'96Municipal Government (city, town, or village) \
+           CO\'96County/Parish \
+                      LD\'96Library District \
+           MJ\'96Multi-jurisdictional \
+           NL\'96Native American Tribal Government \
+           NP\'96Non-profit Association or Agency \
+           SD\'96School District       \
+                      OT\'96Other  \
+           (Note:  Prior to FY 98, this variable was called  \
+           C_LEGBASE.) \
+                       \
+C_ADMIN  02  331  A  16  Administrative Structure Code \
+           MA\'96Administrative Entity with multiple direct service \
+            outlets where administrative offices are separate \
+           MO\'96Administrative Entity with multiple direct service \
+            outlets where administrative offices are   \
+            not separate \
+                      SO\'96Single Outlet Administrative Entity \
+C_FSCS  01  333  A  17  FSCS Public Library Definition (Public library meets all \
+                      criteria in the definition.) \
+                      Y\'96Yes \
+                      N\'96No \
+GEOCODE  03  334  A  18  Geographic Code \
+           CI1\'96 Municipal Government (city, town, or village)  \
+                        (exactly) \
+           CI2\'96 Municipal Government (city, town, or village) (most  \
+            nearly) \
+           CO1\'96County/Parish (exactly) \
+           CO2\'96County/Parish (most nearly) \
+           MA1\'96Metropolitan Area (exactly) \
+           MA2\'96Metropolitan Area (most nearly) \
+           MC1\'96Multi-County (exactly) \
+           MC2\'96Multi-County (most nearly) \
+           SD1\'96School District (exactly) \
+           SD2\'96School District (most nearly) \
+                      OTH\'96Other \
+LSABOUND  01  337  A  19  Legal service area boundary change in last year   \
+                      Y\'96Yes \
+                      N\'96No \
+STARTDAT  10   338  A  20  Reporting period starting date, in dd/mm/yyyy format  \
+           (e.g., 07/01/2003)  \
+F_STDAT  02   348  A    \'86  STARTDAT imputation flag.  (See appendix G for   \
+    definitions of flags.) \
+ENDDATE  10   350  A  21  Reporting period ending date\
+F_ENDDAT  02   360  A    \'86  ENDDATE imputation flag.  (See appendix G for   \
+                      definitions of flags.)           \
+                       \
+                     POPULATION\
+POPU_LSA  09  362  N  22  Population of the Legal Service Area   \
+                       \
+F_POPLSA  02  371    A    \'86  POPU_LSA imputation flag.  (See appendix G for   \
+                      definitions of flags.)    \
+POPU_UND  09  373  N    \'86   Unduplicated population of the legal service area for the  \
+    library.  NCES calculated this value by prorating the  \
+    library's population of legal service area (POPU_LSA) to  \
+    the state's total population of legal service areas (total  \
+    POPU_LSA), and applying the ratio to the state-reported \
+    total unduplicated population of legal service areas.  The \
+    latter item, a single figure reported by the state data  \
+    coordinator, is also named POPU_UND but is located on \
+    the State Summary/State Characteristics Data File. \
+F_POPUND  02  382  A    \'86  POPU_UND imputation flag.  (See appendix G for   \
+                      definitions of flags.)    \
+SERVICE OUTLETS\
+CENTLIB  03  384  N  23  Number of central libraries \
+F_CENLIB  02  387     A    \'86  CENTLIB imputation flag.  (See appendix G for definitions \
+    of flags.)    \
+BRANLIB  03  389  N  24  Number of branch libraries \
+F_BRLIB  02  392    A    \'86  BRANLIB imputation flag.  (See appendix G for definitions \
+    of flags.)    \
+BKMOB  03  394  N  25  Number of bookmobiles \
+F_BKMOB  02  397     A    \'86  BKMOB imputation flag.  (See appendix G for definitions \
+    of flags.)     \
+                  \
+FULL-TIME EQUIVALENT (FTE) PAID STAFF\
+MASTER  09  399  N  26  \'93ALA-MLS\'94 Librarians.  Number of FTE paid librarians  \
+           with master\'92s degrees from programs of library and  \
+                      information studies accredited by  the American Library  \
+           Association. This field consists of six integers and two  \
+           decimals, with an explicit decimal point.  \
+F_MASTER  02           408  A    \'86  MASTER imputation flag.  (See appendix G for definitions \
+    of flags.)  \
+LIBRARIA  09  410  N  27  Total number of FTE employees holding the title of \
+           librarian.  This field consists of six integers and two  \
+           decimals, with an explicit decimal point.   \
+F_LIBRAR  02  419  A    \'86  LIBRARIA imputation flag\
+OTHPAID  09  421  N  28  All other paid FTE employees.  This field consists of  \
+           six integers and two decimals, with an explicit decimal  \
+                      point. \
+F_OTHSTF  02  430  A    \'86  OTHPAID imputation flag.  (See appendix G for definitions \
+                    of flags.) \
+TOTSTAFF  10  432  N  29  Total paid FTE employees (i.e., sum of LIBRARIA and  \
+    OTHPAID).  This field consists of seven integers and two \
+    decimals, with an explicit decimal point. \
+F_TOTSTF  02  442  A    \'86  TOTSTAFF imputation flag.  (See appendix G for   \
+          definitions of flags.) \
+                       \
+                      OPERATING REVENUE\
+LOCGVT  09  444  N  30  Operating revenue from local government \
+F_LOCGVT   02  453  A    \'86  LOCGVT imputation flag.  (See appendix G for definitions \
+    of flags.) \
+STGVT  09  455  N  31  Operating revenue from state government \
+F_STGVT  02  464  A    \'86  STGVT imputation flag.  (See appendix G for definitions  \
+    of flags.) \
+FEDGVT  09  466  N  32  Operating revenue from federal government \
+F_FEDGVT  02  475  A    \'86  FEDGVT imputation flag.  (See appendix G for definitions \
+    of flags.) \
+OTHINCM  09  477  N  33  Other operating revenue (i.e., operating revenue not  \
+           included in LOCGVT, STGVT, and FEDGVT) \
+F_OTHINC  02  486  A    \'86  OTHINCM imputation flag.  (See appendix G for  \
+           definitions of flags.) \
+TOTINCM  10  488  N  34  Total operating revenue (i.e., sum of LOCGVT, STGVT,  \
+           FEDGVT, and OTHINCM) \
+F_TOTINC  02  498  A    \'86  TOTINCM imputation flag.  (See appendix G for definitions \
+                      of flags.) \
+                      OPERATING EXPENDITURES \
+                      Staff expenditures \
+SALARIES  09  500  N  35  Salaries and wages for all library staff \
+F_SALX  02  509  A    \'86  SALARIES imputation flag.  (See appendix G for   \
+    definitions of flags.) \
+BENEFIT  09  511  N  36  Employee benefits for all library staff \
+F_BENX  02  520  A    \'86  BENEFIT imputation flag.  (See appendix G for definitions \
+    of flags.) \
+STAFFEXP  09  522  N  37  Total staff expenditures (i.e., sum of SALARIES and \
+                      BENEFIT)\
+F_TOSTFX  02  531  A     \'86  STAFFEXP imputation flag.  (See appendix G for   \
+                      definitions of flags.) \
+                      Collection expenditures \
+PRMATEXP  09  533  N  38  Operating expenditures for print materials (including  \
+    books, serial back files, current serial subscriptions,  \
+    government documents, and any other print acquisitions) \
+F_PRMATX  02  542  A    \'86  PRMATEXP imputation flag.  (See appendix G for   \
+    definitions of flags.) \
+ELMATEXP  09  544  N  39  Operating expenditures for electronic (digital) materials \
+           (including e-books, e-serials, government documents,   \
+           databases, electronic files, reference tools, scores, maps, \
+           or pictures, including materials digitized by the library) \
+F_ELMATX  02  553  A    \'86  ELMATEXP imputation flag.  (See appendix G for   \
+                      definitions of flags.) \
+OTHMATEX  09  555  N  40  Operating expenditures for other library materials \
+           (microform, audio, video, DVD, and new formats) \
+F_OTMATX  02  564  A    \'86  OTHMATEX imputation flag.  (See appendix G for  \
+    definitions of flags.) \
+TOTEXPCO  09  566  N  41  Total expenditures on library collection (i.e., sum of  \
+           PRMATEXP, ELMATEXP, and OTHMATEX) \
+F_TOCOLX  02  575  A    \'86  TOTEXPCO imputation flag.  (See appendix G for   \
+    definitions of flags.) \
+                      Other  operating expenditures     \
+OTHOPEXP  09  577  N  42  Other operating expenditures (i.e., operating expenditures  \
+           not included in STAFFEXP and TOTEXPCO) \
+F_OTHOPX  02  586  A    \'86  OTHOPEXP imputation flag.  (See appendix G for  \
+    definitions of flags.) \
+TOTOPEXP  10  588  N  43  Total operating expenditures (i.e., sum of STAFFEXP, \
+           TOTEXPCO, and OTHOPEXP)   \
+F_TOTOPX  02   598  A    \'86  TOTOPEXP imputation flag.  (See appendix G for   \
+                      definitions of flags.) \
+                                       \
+                      CAPITAL REVENUE \
+FILL44  09  600  A  44  Blank (reserved for future use) \
+FILLF44  02  609  A    \'86  FILL44 imputation flag.  (See appendix G for   \
+                      definitions of flags.) \
+FILL45  09  611  A  45  Blank (reserved for future use) \
+FILLF45  02  620  A    \'86  FILL45 imputation flag.  (See appendix G for   \
+                      definitions of flags.) \
+FILL46  09  622  A  46  Blank (reserved for future use) \
+FILLF46  02  631  A    \'86  FILL46 imputation flag.  (See appendix G for   \
+                      definitions of flags.) \
+FILL47  09  633  A  47  Blank (reserved for future use) \
+FILLF47  02  642  A    \'86  FILL47 imputation flag.  (See appendix G for   \
+                      definitions of flags.) \
+CAP_REV  09  644  N  48  Total capital revenue (i.e., sum of LCAP_REV,  \
+           SCAP_REV, FCAP_REV, and OCAP_REV) \
+F_TCAPRV  02  653  A    \'86  CAP_REV imputation flag.  (See appendix G for \
+                      definitions of flags.) \
+                      CAPITAL EXPENDITURES\
+CAPITAL  09  655  N  49  Total capital expenditures \
+F_TCAPX  02  664  A    \'86  CAPITAL imputation flag.  (See appendix G for definitions \
+                    of flags.) \
+                      LIBRARY COLLECTION\
+BKVOL  09  666  N  50  Print materials (including books, serial back files, and  \
+    government documents) \
+F_BKVOL  02  675  A    \'86  BKVOL imputation flag.  (See appendix G for definitions  \
+    of flags.) \
+EBOOK  09  677  N  51  Electronic books (E-books) (digital documents, including  \
+    non-serial government documents in digital format) \
+F_EBOOK  02  686  A    \'86  EBOOK imputation flag.  (See appendix G for definitions  \
+    of flags.) \
+AUDIO  09  688  N  52  Audio materials (including records, audiocassettes, audio \
+    cartridges, audio discs\'97including audio-CD-ROMS,  \
+    audio reels, talking books, and other sounding recordings) \
+F_AUDIO  02  697  A    \'86  AUDIO imputation flag.  (See appendix G for definitions  \
+    of flags.) \
+VIDEO  09  699  N  53  Video materials (including video tapes, DVDs, video CD- \
+    ROMs, etc.) \
+F_VIDEO  02  708  A    \'86  VIDEO imputation flag.  (See appendix G for definitions of \
+                  flags.) \
+DATABASE  09  710  N  54  Databases (locally mounted or remote, full-text or not, for \
+          which temporary or permanent access rights have been  \
+                    acquired) \
+F_DBASE  02  719  A    \'86  DATABASE imputation flag.  (See appendix G for   \
+          definitions of flags.) \
+SUBSCRIP  09  721  N  55  Current  print serial subscriptions \
+F_PRSUB  02  730  A     \'86  SUBSCRIP imputation flag.  (\
+ESUBSCRP  09  732  N  56  Current electronic serial subscriptions \
+F_ESUB  02  741  A    \'86  ESUBSCRP imputation flag.  (See appendix G for   \
+                      definitions of flags.) \
+                      PUBLIC SERVICE HOURS\
+HRS_OPEN   09  743  N  57  Total annual public service hours for all service outlets  \
+F_HRS_OP  02  752  A    \'86  HRS_OPEN imputation flag.  (See appendix G for   \
+    definitions of flags.) \
+                      LIBRARY SERVICES\
+VISITS  09  754  N  58  Total annual library visits \
+F_VISITS  02  763  A    \'86  VISITS imputation flag.  (See appendix G for definitions  \
+                      of flags.) \
+REFERENC   09  765  N  59  Total annual reference transactions \
+F_REFER  02  774  A    \'86  REFERENC imputation flag.  (See appendix G for   \
+                      definitions of flags.) \
+                      CIRCULATION\
+TOTCIR  09  776  N  60  Total annual circulation transactions \
+F_TOTCIR  02  785  A    \'86  TOTCIR imputation flag.  (See appendix G for definitions \
+    of flags.) \
+KIDCIRCL  09  787  N  61  Total annual circulation (including renewals) of all  \
+                      children's materials in all formats to all users \
+F_KIDCIR  02  796  A    \'86  KIDCIRCL imputation flag.  (See appendix G for  \
+                      definitions of flags.) \
+                      INTER-LIBRARY LOANS\
+LOANTO  06  798  N  62  Total annual loans provided to other libraries \
+F_LOANTO  02  804  A    \'86  LOANTO imputation flag.  (See appendix G for definitions \
+    of flags.) \
+LOANFM  06  806  N  63  Total annual loans received from other libraries \
+F_LOANFM  02  812  A    \'86  LOANFM imputation flag.  (See appendix G for definitions \
+    of flags.) \
+                      LIBRARY PROGRAMS \
+TOTPRO  09  814  N  64  Total library programs \
+F_TOTPRO  02  823  A    \'86  TOTPRO imputation flag.  (See appendix G for definitions \
+                      of flags.) \
+FILL65  09  825  A  65  Blank (reserved for future use) \
+FILLF65  02  834  A    \'86  FILL65 imputation flag.  (See appendix G for   \
+                      definitions of flags.) \
+TOTATTEN  09  836  N  66  Total audience at a\
+F_TOTATT  02  845  A    \'86  TOTATTEN imputation flag.  (See appendix G for  \
+                      definitions of flags.) \
+KIDATTEN   09  847  N  67  Total audience at all children\'92s programs \
+F_KIDATT  02  856  A    \'86  KIDATTEN imputation flag.  (See appendix G for   \
+    definitions of flags.) \
+                      ELECTRONIC TECHNOLOGY \
+GPTERMS  06  858  N  68  Internet terminals used by general public \
+F_GPTERM  02  864  A    \'86  GPTERMS imputation flag.  (See appendix G for   \
+          definitions of flags.) \
+ERES_USR  09  866  N  69  Users of electronic resources per year \
+F_ER_USR  02  875  A    \'86  ERES_USR imputation flag.  (See appendix G for   \
+                      definitions of flags.) \
+                      OTHER \
+PUB_FIPS  02  877  A    \'86  Two-digit Federal Information Processing Standards  \
+           (FIPS) State Code.  See appendix D for list of State  \
+           Codes. \
+CNTYFIPS  03  879  A    \'86  Three-digit FIPS County Code \
+                      M =Missing \
+YR_SUB  04  882  A    \'86  FSCS submission year of public library data in 4-digit \
+format (YYYY)   \
+OBEREG  02  886  A    \'86  Bureau of Economic Analysis Code (formerly, Office of  \
+           Business Economics) \
+           00\'96U.S. Service Schools \
+           01\'96New England (CT ME MA NH RI VT) \
+           02\'96Mid East (DE DC MD NJ NY PA) \
+           03\'96Great Lakes (IL IN MI OH WI) \
+           04\'96Plains (IA KS MN MO NE ND SD) \
+           05\'96Southeast (AL AR FL GA KY LA MS NC SC TN  \
+                        VA WV) \
+           06\'96Southwest (AZ NM OK TX) \
+           07\'96Rocky Mountains (CO ID MT UT WY) \
+           08\'96Far West (AK CA HI NV OR WA) \
+           09\'96Outlying Areas (AS GU MP PR VI) \
+RSTATUS  01  888  A    \'86  1\'96Respo\
+}

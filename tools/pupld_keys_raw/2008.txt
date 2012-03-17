@@ -1,0 +1,393 @@
+STABR 02   1 A  †   Two-letter Federal Information Processing Standards
+(FIPS) State Code. (See Appendix D for list of State
+Codes.)
+FSCSKEY 06   3 A 150          Library identification code assigned by IMLS
+LIBID 20   9 A 151          Library identification code assigned by the state.  IMLS 
+assigns the FSCSKEY to this field if the state did not 
+assign a code.
+LIBNAME 60  29 A 152          Name of library (administrative entity)
+STREET ADDRESS
+ADDRESS 35  89 A 153          Street address of administrative entity
+CITY 20 124 A 154          City or town (of street address) of administrative entity
+ZIP 05 144 A 155          Standard five-digit postal zip code (of street address) of 
+administrative entity.
+M = Missing (unknown, not reported)
+ZIP4 04 149 A 156          Four-digit postal zip code extension (of street address) 
+of administrative entity.
+M = Missing (unknown, not reported)
+MAILING ADDRESS
+ADDRES_M 35 153 A 157          Mailing address of administrative entity
+CITY_M 20 188 A 158          City or town (of mailing address) of administrative entity
+ZIP_M 05 208 A 159          Standard five-digit postal zip code (of mailing address) 
+of administrative entity
+M = Missing (unknown, not reported)
+ZIP4_M 04 213 A 160          Four-digit postal zip code extension (of mailing address) 
+of administrative entity
+M = Missing (unknown, not reported)
+CNTY 20 217 A 161          County of library
+PHONE 10 237 A 162          Telephone number, in following format:  area 
+code/exchange/number (for example, 7037315072)
+M = Missing (unknown, not reported)
+-3 = Not applicable
+WEB_ADDR 80 247 A 163          Web address of the administrative entity.
+M = Missing (unknown, not reported)
+-3 = Not applicable
+C_RELATN 02 327 A 200          Interlibrary Relationship Code
+HQ–Headquarters of a federation or cooperative
+C_LEGBAS 02 329 A 201          Legal Basis Code
+CC–City/County
+CI–Municipal Government (city, town, or village)
+CO–County/Parish
+LD–Library District
+MJ–Multi-jurisdictional
+NL–Native American Tribal Government
+NP–Non-profit Association or Agency
+SD–School District  OT–Other
+(Note: Prior to FY 98, this variable was called 
+C_LEGBASE.)
+C_ADMIN 02 331 A 202          Administrative Structure Code
+MA–Administrative Entity with multiple direct service 
+outlets where administrative offices are separate
+MO–Administrative Entity with multiple direct service 
+outlets where administrative offices are not separate
+SO–Single Outlet Administrative Entity
+C_FSCS 01 333 A 203          FSCS Public Library Definition (Public library meets all 
+criteria in the definition.)
+Y–Yes
+N–No
+GEOCODE 03 334 A 204          Geographic Code
+CI1–Municipal Government (city, town, or village) 
+(exactly)
+CI2–Municipal Government (city, town, or village) (most 
+nearly)
+CO1–County/Parish (exactly)
+CO2–County/Parish (most nearly)
+MA1–Metropolitan Area (exactly)
+MA2–Metropolitan Area (most nearly)
+MC1–Multi-County (exactly)
+MC2–Multi-County (most nearly)
+SD1–School District (exactly) 
+SD2–School District (most nearly) 
+OTH–Other
+LSABOUND 01 337 A 205          Legal service area boundary change in last year
+Y–Yes
+N–No
+STARTDAT 10 338 A 206          Reporting period starting date, in mm/dd/yyyy format
+(e.g., 07/01/2007)
+M = Missing (unknown, not reported)
+F_STDAT 04 348 A  †   STARTDAT imputation flag.  (See Appendix G for 
+definition of flags.)
+ENDDATE 10 352 A 207          Reporting period ending date, in mm/dd/yyyy format
+(e.g., 06/30/2008)
+M = Missing (unknown, not reported)
+F_ENDDAT 04 362 A  †   ENDDATE imputation f
+POPU_LSA 09 366 N 208          Population of the Legal Service Area
+F_POPLSA 04 375 A  †   POPU_LSA imputation flag.  (See Appendix G for 
+definition of flags.)
+POPU_UND 09 379 N 209          Unduplicated population of the legal service area for the 
+library.  This value is calculated by prorating the library's 
+population of legal service area (POPU_LSA) to the 
+state's total population of legal service areas (total 
+POPU_LSA), and applying the ratio to the state-reported 
+total unduplicated population of legal service areas. The 
+latter item, a single figure reported by the state data 
+coordinator, is also named POPU_UND but is located 
+on the State Summary/State Characteristics Data File.
+F_POPUND 04 388 A  †   POPU_UND imputation flag.  (See Appendix G for 
+definitions of flags.)
+SERVICE OUTLETS
+CENTLIB 03 392 N 210          Number of central libraries
+F_CENLIB 04 395 A  †   CENTLIB imputation flag.  (See Appendix G for 
+definitions of flags.)
+BRANLIB 03 399 N 211          Number of branch libraries
+F_BRLIB 04 402 A  †   BRANLIB imputation flag.  (See Appendix G for 
+definitions of flags.)
+BKMOB 03 406 N 212          Number of bookmobiles
+F_BKMOB 04 409 A  †   BKMOB imputation flag.  (See Appendix G for definitions 
+of flags.)
+FULL-TIME EQUIVALENT (FTE) PAID STAFF
+MASTER 09 413 N 250          "ALA-MLS" Librarians.  Number of FTE paid librarians 
+with Master's degrees from programs of library and 
+information studies accredited by the American Library 
+Association.  This field consists of six integers and two 
+decimals, with an explicit decimal point.
+F_MASTER 04 422 A  †   MASTER imputation flag.  (See Appendix G for 
+definitions of flags.)
+LIBRARIA 09 426 N 251          Total number of FTE employees holding the title of 
+librarian.  This field consists of six integers and two 
+decimals, with an explicit decimal point.
+F_LIBRAR 04 435 A  †   LIBRARIA imputation flag.  (See Appendix G for 
+definitions of flags.)
+OTHPAID 09 439 N 252          All other paid FTE employees.  This field consists of six 
+integers and two decimals, with an explicit decimal point.
+F_OTHSTF 04 448 A  †   OTHPAID imputation flag.  (See Append
+TOTSTAFF 10 452 N 253          Total paid FTE employees (i.e., sum of LIBRARIA and 
+OTHPAID).  This field consists of seven integers and 
+two decimals, with an explicit decimal point.
+F_TOTSTF 04 462 A  †   TOTSTAFF imputation flag.  (See Appendix G for 
+definitions of flags.)
+OPERATING REVENUE
+LOCGVT 09 466 N 300          Operating revenue from local government
+F_LOCGVT 04 475 A  †   LOCGVT imputation flag.  (See Appendix G for 
+definitions of flags.)
+STGVT 09 479 N 301          Operating revenue from state government
+F_STGVT 04 488 A  †   STGVT imputation flag.  (See Appendix G for definitions 
+of flags.)
+FEDGVT 09 492 N 302          Operating revenue from federal government
+F_FEDGVT 04 501 A  †   FEDGVT imputation flag.  (See Appendix G for 
+definitions of flags.)
+OTHINCM 09 505 N 303          Other operating revenue (i.e., operating revenue not 
+included in LOCGVT, STGVT, and FEDGVT)
+F_OTHINC 04 514 A  †   OTHINCM imputation flag.  (See Appendix G for 
+definitions of flags.)
+TOTINCM 10 518 N 304          Total operating revenue (i.e., sum of LOCGVT, STGVT, 
+FEDGVT, and OTHINCM)
+F_TOTINC 04 528 A  †   TOTINCM imputation flag.  (See Appendix G for 
+definitions of flags.)
+OPERATING EXPENDITURES
+Staff Expenditures
+SALARIES 09 532 N 350          Salaries and wages for all library staff
+F_SALX 04 541 A  †   SALARIES imputation flag.  (See Appendix G for 
+definitions of flags.)
+BENEFIT 09 545 N 351          Employee benefits for all library staff
+F_BENX 04 554 A  †   BENEFIT imputation flag.  (See Appendix G for 
+definitions of flags.)
+STAFFEXP 09 558 N 352          Total staff expenditures (i.e., sum of SALARIES and
+BENEFIT)
+F_TOSTFX 04 567 A  †   STAFFEXP imputation flag.  (See Appendix G for 
+definitions of flags.)
+Collection expenditures
+PRMATEXP 09 571 N 353          Operating expenditures for print materials (including 
+books, serial back files, current serial subscriptions, 
+government documents, and any oth
+F_PRMATX 04 580 A  †   PRMATEXP imputation flag.  (See Appendix G for 
+definitions of flags.)
+ELMATEXP 09 584 N 354          Operating expenditures for electronic (digital) materials 
+(including e-books, e-serials, government documents, 
+databases, electronic files, reference tools, scores, 
+maps, or pictures, including materials digitized by the 
+library)
+F_ELMATX 04 593 A  †   ELMATEXP imputation flag.  (See Appendix G for 
+definitions of flags.)
+OTHMATEX 09 597 N 355          Operating expenditures for all other library materials 
+(microform, audio, video, DVD, and new formats)
+F_OTMATX 04 606 A  †   OTHMATEX imputation flag.  (See Appendix G for 
+definitions of flags.)
+TOTEXPCO 09 610 N 356          Total expenditures on library collection (i.e., sum of 
+PRMATEXP, ELMATEXP, and OTHMATEX)
+F_TOCOLX 04 619 A  †   TOTEXPCO imputation flag.  (See Appendix G for 
+definitions of flags.)
+Other operating expenditures
+OTHOPEXP 09 623 N 357          Other operating expenditures (i.e., operating 
+expenditures not included in STAFFEXP and 
+TOTEXPCO)
+F_OTHOPX 04 632 A  †   OTHOPEXP imputation flag.  (See Appendix G for 
+definitions of flags.)
+TOTOPEXP 10 636 N 358          Total operating expenditures (i.e., sum of STAFFEXP, 
+TOTEXPCO, and OTHOPEXP)
+F_TOTOPX 04 646 A  †   TOTOPEXP imputation flag.  (See Appendix G for 
+definitions of flags.)
+CAPITAL REVENUE
+LCAP_REV 09 650 N 400          Local government capital revenue
+F_LCAPRV 04 659 A  †   LCAP_REV imputation flag.  (See Appendix G for 
+definitions of flags.)
+SCAP_REV 09 663 N 401          State government capital revenue
+F_SCAPRV 04 672 A  †   SCAP_REV imputation flag.  (See Appendix G for 
+definition of flags.)
+FCAP_REV 09 676 N 402          Federal government capital revenue
+F_FCAPRV 04 685 A  †   FCAP_REV imputation flag.  (See Appendix G for 
+definitions of flags.)
+OCAP_REV 09 689 N 403          Other capital revenue (i.e., capital revenue not in
+F_OCAPRV 04 698 A  †   OCAP_REV imputation flag.  (See Appendix G for 
+definition of flags.)
+CAP_REV 09 702 N 404          Total capital revenue (i.e., sum of LCAP_REV, 
+SCAP_REV, FCAP_REV, and OCAP_REV)
+F_TCAPRV 04 711 A  †   CAP_REV imputation flag.  (See Appendix G for 
+definitions of flags.)
+CAPITAL EXPENDITURES
+CAPITAL 09 715 N 405          Total capital expenditures
+F_TCAPX 04 724 A  †   CAPITAL imputation flag.  (See Appendix G for 
+definitions of flags.)
+LIBRARY COLLECTION
+BKVOL 09 728 N 450          Print materials (including books, serial back files, and 
+government documents)
+F_BKVOL 04 737 A  †   BKVOL imputation flag.  (See Appendix G for definitions 
+of flags.)
+EBOOK 09 741 N 451          Electronic books (E-books) (digital documents, including 
+non-serial government documents in digital format)
+F_EBOOK 04 750 A  †   EBOOK imputation flag.  (See Appendix G for definitions 
+of flags.)
+AUDIO 09 754 N 452          Audio materials (including records, audiocassettes, 
+audio cartridges, audio discs—including audio-CDROMS, audio reels, talking books, and other sound 
+recordings)
+F_AUDIO 04 763 A  †   AUDIO imputation flag.  (See Appendix G for definitions 
+of flags.)
+VIDEO 09 767 N 453          Video materials (including video tapes, DVDs, video CDROMS, etc.)
+F_VIDEO 04 776 A  †   VIDEO imputation flag.  (See Appendix G for definitions 
+of flags.)
+LICENSED DATABASES
+DB_LOC 09 780 N 454          Local licensed databases
+F_DB_LOC 04 789 A  †   DB_LOC imputation flag.  (See Appendix G for 
+definitions of flags.)
+DB_ST 09 793 N 455          State (state government or state library) licensed 
+databases
+F_DB_ST 04 802 A  †   DB_ST imputation flag.  (See Appendix G for definitions 
+of flags.)
+DB_OTH 09 806 N 456          Other licensed databases (cooperative agreements or 
+consortia within state or region.)
+F_DB_OTH 04 815 A  †   DB_OTH imputatio
+DATABASE 09 819 N 457          Total Licensed Databases
+F_DBASE 04 828 A  †   DATABASE imputation flag.  (See Appendix G for 
+definitions of flags.)
+SUBSCRIP 09 832 N 455          Current print serial subscriptions
+F_PRSUB 04 841 A  †   SUBSCRIP imputation flag.  (See Appendix G for 
+definitions of flags.)
+ESUBSCRP 09 845 N 456          Current electronic serial subscriptions
+F_ESUB 04 854 A  †   ESUBSCRP imputation flag.  (See Appendix G for 
+definitions of flags.)
+PUBLIC SERVICE HOURS
+HRS_OPEN 09 858 N 500          Total annual public service hours for all service outlets
+F_HRS_OP 04 867 A  †   HRS_OPEN imputation flag.  (See Appendix G for 
+definitions of flags.)
+LIBRARY SERVICES
+VISITS 09 871 N 501          Total annual library visits
+F_VISITS 04 880 A  †   VISITS imputation flag.  (See Appendix G for definitions 
+of flags.)
+REFERENC 09 884 N 502          Total annual reference transactions
+F_REFER 04 893 A  †   REFERENC imputation flag.  (See Appendix G for 
+definitions of flags.)
+REGBOR 09 897 N 503          Registered Borrowers
+F_REGBOR 04 906 A  †   REGBOR imputation flag.  (See Appendix G for 
+definitions of flags.)
+CIRCULATION
+TOTCIR 09 910 N 550          Total annual circulation transactions
+F_TOTCIR 04 919 A  †   TOTCIR imputation flag.  (See Appendix G for 
+definitions of flags.)
+KIDCIRCL 09 923 N 551          Total annual circulation (including renewals) of all 
+children's materials in all formats to all users
+F_KIDCIR 04 932 A  †   KIDCIRCL imputation flag.  (See Appendix G for 
+definitions of flags.)
+INTER-LIBRARY LOANS
+LOANTO 06 936 N 552          Total annual loans provided to other libraries
+F_LOANTO 04 942 A  †   LOANTO imputation flag.  (See Appendix G for 
+definitions of flags.)
+LOANFM 06 946 N 553          Total annual loans received from oth
+F_LOANFM 04 952 A  †   LOANFM imputation flag.  (See Appendix G for 
+definitions of flags.)
+LIBRARY PROGRAMS
+TOTPRO 09 956 N 600          Total library programs
+F_TOTPRO 04 965 A  †   TOTPRO imputation flag.  (See Appendix G for 
+definitions of flags.)
+KIDPRO 09 969 N 601          Total children's programs
+F_KIDPRO 04 978 A  †   KIDPRO imputation flag.  (See Appendix G for 
+definitions of flags.)
+TOTATTEN 09 982 N 602          Total audience at all library programs
+F_TOTATT 04 991 A  †   TOTATTEN imputation flag.  (See Appendix G for 
+definitions of flags.)
+KIDATTEN 09 995 N 603          Total audience at all children's programs
+F_KIDATT 04 1004 A  †   KIDATTEN imputation flag.  (See Appendix G for 
+definitions of flags.)
+ELECTRONIC TECHNOLOGY
+GPTERMS 06 1008 N 650          Internet computers used by general public
+F_GPTERM 04 1014 A  †   GPTERMS imputation flag.  (See Appendix G for 
+definitions of flags.)
+PITUSR 09 1018 N 651          Users of public internet computers per year
+F_PITUSR 04 1027 A  †   PITUSR imputation flag.  (See Appendix G for 
+definitions of flags.)
+OTHER
+PUB_FIPS 02 1031 A  †   Two-digit Federal Information Processing Standards 
+(FIPS) State Code.  (See Appendix D for list of State 
+Codes.)
+CNTYFIPS 03 1033 A  †   Three-digit FIPS County Code
+M =Missing
+YR_SUB 04 1036 A  †   FSCS submission year of public library data in 4-digit 
+format (YYYY)
+OBEREG 02 1040 A  †   Bureau of Economic Analysis Code (formerly, Office of 
+Business Economics)
+01–New England (CT ME MA NH RI VT)
+02–Mid East (DE DC M
+RSTATUS 01 1042 A  †   Reporting status
+1–Respondent, with no imputed data
+2–Respondent, with both reported and imputed data
+3–Nonrespondent, not imputed
+4–Nonrespondent with imputed data
+STATSTRU 02 1043 A  †   Structure Change Code
+00–No change from last year 
+01–Existing Administrative Entity or Outlet absorbs 
+another Administrative Entity or Outlet
+02–Newly created Administrative Entity or Outlet 
+03–Closed
+04–Move Outlet to a newly created Administrative Entity 
+05–Merge two or more Administrative Entities or Outlets 
+to form a new Administrative Entity or Outlet
+06–(reserved) 
+07–(reserved)
+08–Restored a closed Administrative Entity or Outlet 
+record 
+09–Restored an incorrectly deleted Administrative Entity 
+or Outlet
+10–Delete an incorrect record
+11–Outlet moved to a different previously existing 
+Administrative Entity
+12–(reserved)
+13–Add an existing Administrative Entity or Outlet not 
+previously reported
+(Note: This code records structure changes to 
+administrative entities and outlets, and is included on the 
+Public Library Data File and the Public Library Outlet 
+File.  Structure changes include actions such as adding, 
+deleting, or merging administrative entities or outlets. 
+The full list of codes is provided; however, some codes 
+are specific to one of the data files (e.g., code 11 would 
+appear only on the Public Library Outlet Data File.)
+STATNAME 02 1045 A 152A         Name Change Code
+00–No change from last year
+06–Official name change
+14–Minor name change
+STATADDR 02 1047 A 153A         Address Change Code
+00–No change from last year
+07–Moved to a new location
+15–Minor address change
+LONGITUD 11 1049 N  †   Longitude. This field consists of a negative sign, three 
+integers and six decimal places, with an explicit decimal 
+point.
+0.000000 - Missing
+LATITUDE 09 1060 N  †   Latitude. This field consists of two integers and six 
+decimal places, with an explicit decimal point.
+0.000000 - Missing
+FIPSST 02 1069 A  †   Two-digit Federal In
+FIPSCO 03 1071 A  †   Three-digit FIPS County Code
+000 - Missing
+FIPSPLAC 05 1074 A  †   FIPS Place
+00000 - Missing
+CNTYPOP 08 1079 N  †   County Population
+-1 = Missing
+LOCALE 02 1087 A  †   Urban-centric locale code. The geographic location in 
+terms of the size of the community in which it is located 
+and the proximity of that community to urban and 
+metropolitan areas.
+. –Missing
+11–City, Large: Territory inside an urbanized area and 
+inside a princip
+CENTRACT 07 1089 N  †   Census Tract. A small, relatively permanent statistical 
+subdivision of a county or statistically equivalent entity 
+delineated by local participants as part of the Census 
+Bureau’s Participant Statistical Areas Program. This field 
+consists of four integers and two decimals, with an 
+explicit decimal point.
+0 - Missing
+CENBLOCK 04 1096 N  †   Census Block. An area bounded on all sides by visible 
+features, such as streets, roads, streams, and railroads 
+tracks, and by invisible boundaries, such as city, town, 
+township, and county limits, property lines, and short, 
+imaginary extensions of streets and roads (designated 
+by the Census Bureau).
+0 - Missing
+CDCODE 02 1100 A  †   Congressional District. FIPS code based on the location 
+of the administrative entity/outlet.  Legislatively defined 
+subdivisions of the state for the purpose of electing 
+representatives to the House of Representatives of the 
+U.S. Congress.
+. - Missing
+MAT_CENT 01 1102 A  †   Match Centroid.  The geographic level at which the 
+address was matched

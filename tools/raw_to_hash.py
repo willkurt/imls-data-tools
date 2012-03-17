@@ -2,9 +2,9 @@ import re
 """
 Takes raw data about field mapping from imls and creates a python dictionary
 """
-for year in range(1998,2008):
-    fin = "./puout_keys_raw/{0}.txt".format(year)
-    fout = "./puout_keys_processed/{0}.txt".format(year)
+for year in range(2003,2010):
+    fin = "./pusum_keys_raw/{0}.txt".format(year)
+    fout = "./pusum_keys_processed/{0}.txt".format(year)
     print("reading from {0}".format(fin))
     fr = open(fin,'r')
     fw = open(fout,'w')
