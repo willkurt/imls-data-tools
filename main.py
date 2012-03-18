@@ -20,8 +20,13 @@ if __name__ == "__main__":
     print("pupld data")
     df = IMLSDataFile('pupld',2009)
     df.to_csv()
+    print("2009 csv complete")
     df2 = IMLSDataFile('pupld',2008)
     df2.to_csv()
+    print("2008 csv complete")
+    df3 = IMLSDataFile('pupld',2007)
+    df3.to_csv()
+    print("2007 csv complete")
     print("pusum data")
     
 

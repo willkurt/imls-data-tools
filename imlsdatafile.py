@@ -41,11 +41,11 @@ class IMLSDataFile(object):
         keys = self.fields.keys()
         #i always want these 2 to be first
         #every record set should have these keys
-        keys.remove('FSCKEY')
+        keys.remove('FSCSKEY')
         keys.remove('LIBNAME')
-        fout.write('FSCKEY,LIBNAME,'.join(keys)+'\n')
+        fout.write('FSCSKEY,LIBNAME,'.join(keys)+'\n')
         for r in self.records:
-            vals = ['FSCKEY','LIBNAME']
+            vals = ['FSCSKEY','LIBNAME']
             for k in keys:
                 v = r.lookup(k) or 'NA'
                 #-3 is the IMLS value for 'NA'
