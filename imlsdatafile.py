@@ -1,5 +1,6 @@
 from imls_const import IMLSConst
 from imlsrecord import IMLSRecord
+from imlsrecord_keys import IMLSRecordKeys
 
 
 class IMLSDataFile(object):
@@ -12,6 +13,9 @@ class IMLSDataFile(object):
         f = open(IMLSConst.DATA_PATH.format(rtype,year),'r')
         self.records = []
         self.record_dict = {}
+        self.rtype = rtype
+        self.year = year
+        self.fields = IMLSRecordKeys.fields[rtype][year]
         for line in f.readlines():
             rec = IMLSRecord(line,rtype,year)
             self.records.append(rec)
@@ -29,16 +33,27 @@ class IMLSDataFile(object):
     def select_all_s(self,field_name):
         return set(self.select_all(field_name))
 
-    
-    #assumes numeric data
-    #calculates a float
-    #also it breaks stupid easy... needs more regex ;)
-    def sum(self,field_name):
-        total = 0
-        for r in self.records:
-            total += float(r.lookup(field_name))
-                 
-
     def id_lookup(self,fscskey,key):
         return self.record_dict[fscskey].lookup(key)
-                  
+    
+    def to_csv(self):
+        fout = open("{0}-{1}.csv".format(self.rtype,self.year),'w')
+        keys = self.fields.keys()
+        #i always want these 2 to be first
+        #every record set should have these keys
+        keys.remove('FSCKEY')
+        keys.remove('LIBNAME')
+        fout.write('FSCKEY,LIBNAME,'.join(keys)+'\n')
+        for r in self.records:
+            vals = ['FSCKEY','LIBNAME']
+            for k in keys:
+                v = r.lookup(k) or 'NA'
+                #-3 is the IMLS value for 'NA'
+                #-1 is for missing
+                if v is -3 or v is -1:
+                    v = 'NA'
+                v = v.replace(',','<comma>')
+                vals.append(v)
+            fout.write(','.join(vals)+'\n')
+        fout.close()
+        

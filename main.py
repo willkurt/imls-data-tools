@@ -1,4 +1,9 @@
 from imlsrecord import IMLSRecord
+from imlsdatafile import IMLSDataFile
+
+#right now this main is just for experimenting
+#and playing around with code
+
 
 if __name__ == "__main__":
     print("sanity check for IMLSRecord")
@@ -13,7 +18,10 @@ if __name__ == "__main__":
     fpuout.close()
 
     print("pupld data")
-    
+    df = IMLSDataFile('pupld',2009)
+    df.to_csv()
+    df2 = IMLSDataFile('pupld',2008)
+    df2.to_csv()
     print("pusum data")
     
 
