@@ -43,14 +43,16 @@ class IMLSDataFile(object):
         #every record set should have these keys
         keys.remove('FSCSKEY')
         keys.remove('LIBNAME')
-        fout.write('FSCSKEY,LIBNAME,'.join(keys)+'\n')
+        fout.write('FSCSKEY,LIBNAME,'+','.join(keys)+'\n')
+        keys = ['FSCSKEY','LIBNAME'] + keys
         for r in self.records:
-            vals = ['FSCSKEY','LIBNAME']
+            vals = []
             for k in keys:
                 v = r.lookup(k) or 'NA'
                 #-3 is the IMLS value for 'NA'
                 #-1 is for missing
-                if v is -3 or v is -1:
+                v_strip = v.strip()
+                if v is '-3' or v is '-1':
                     v = 'NA'
                 v = v.replace(',','<comma>')
                 vals.append(v)
