@@ -20,7 +20,10 @@ class IMLSDataFile(object):
             rec = IMLSRecord(line,rtype,year)
             self.records.append(rec)
             #this might be specific to puout format, be carful
-            self.record_dict[rec.lookup("FSCSKEY")] = rec
+            if rtype is "puout":
+                self.record_dict[rec.lookup("FSCSKEY")+rec.lookup("FSCS_SEQ")] = rec
+            else:
+                self.record_dict[rec.lookup("FSCSKEY")] = rec
 
     
     def select_all(self,field_name):
@@ -28,6 +31,17 @@ class IMLSDataFile(object):
         for r in self.records:
             vals.append(r.lookup(field_name))
         return vals
+
+    #unique_id is a comob of FSCSKEY and FSCS_SEQ
+    #only works for puout (need a better check for that)
+    def unique_ids(self):
+        vals = []
+        for r in self.records:
+            first = r.lookup('FSCSKEY')
+            last = r.lookup('FSCS_SEQ')
+            vals.append(first+last)
+        return set(vals)
+
 
     #like select all but returns a set
     def select_all_s(self,field_name):
@@ -39,12 +53,18 @@ class IMLSDataFile(object):
     def to_csv(self):
         fout = open("{0}-{1}.csv".format(self.rtype,self.year),'w')
         keys = self.fields.keys()
-        #i always want these 2 to be first
-        #every record set should have these keys
         keys.remove('FSCSKEY')
+        if rtype is 'puout':
+            keys.remove('FSCS_SEQ')
         keys.remove('LIBNAME')
-        fout.write('FSCSKEY,LIBNAME,'+','.join(keys)+'\n')
-        keys = ['FSCSKEY','LIBNAME'] + keys
+        if rtype is 'puout':
+            fout.write('FSCSKEY','FSCS_SEQ','LIBNAME,'+','.join(keys)+'\n')
+        else:
+            fout.write('FSCSKEY','LIBNAME,'+','.join(keys)+'\n')
+        if rtype is 'puout':
+            keys = ['FSCSKEY','FSCS_SEQ','LIBNAME'] + keys
+        else:
+            keys = ['FSCSKEY','LIBNAME'] + keys
         for r in self.records:
             vals = []
             for k in keys:
