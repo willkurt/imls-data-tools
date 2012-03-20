@@ -34,12 +34,14 @@ class IMLSDataFile(object):
 
     #unique_id is a comob of FSCSKEY and FSCS_SEQ
     #only works for puout (need a better check for that)
-    def unique_ids(self):
+    #should be able to fix this simply enough later
+    def unique_ids(self, testf=lambda x: True):
         vals = []
         for r in self.records:
-            first = r.lookup('FSCSKEY')
-            last = r.lookup('FSCS_SEQ')
-            vals.append(first+last)
+            if testf(r):
+                first = r.lookup('FSCSKEY')
+                last = r.lookup('FSCS_SEQ')
+                vals.append(first+last)
         return set(vals)
 
 
@@ -54,14 +56,14 @@ class IMLSDataFile(object):
         fout = open("{0}-{1}.csv".format(self.rtype,self.year),'w')
         keys = self.fields.keys()
         keys.remove('FSCSKEY')
-        if rtype is 'puout':
+        if self.rtype is 'puout':
             keys.remove('FSCS_SEQ')
         keys.remove('LIBNAME')
-        if rtype is 'puout':
+        if self.rtype is 'puout':
             fout.write('FSCSKEY','FSCS_SEQ','LIBNAME,'+','.join(keys)+'\n')
         else:
             fout.write('FSCSKEY','LIBNAME,'+','.join(keys)+'\n')
-        if rtype is 'puout':
+        if self.rtype is 'puout':
             keys = ['FSCSKEY','FSCS_SEQ','LIBNAME'] + keys
         else:
             keys = ['FSCSKEY','LIBNAME'] + keys
