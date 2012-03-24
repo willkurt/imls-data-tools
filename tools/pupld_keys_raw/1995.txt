@@ -1,0 +1,130 @@
+LIBID 20  1 A 01 Library identification code assigned by the state.  NCES 
+assigns the FSCSKEY to this field if the state did not 
+assign a code.
+LIBNAME 45 21 A 02 Name of library
+ADDRESS 35 66 A 03 Street address of library
+CITY 17 101 A 04 City or town of library
+ZIP1 05 118 A 05 Standard five-digit postal zip code for street address of 
+administrative entity
+ZIP2 04 123 A 06 Four-digit postal zip code extension for street address of 
+administrative entity
+PHONE 10 127 A 07 Telephone number, in following format:  area code/ 
+exchange/number (for example, 7037315072)
+POPULATION
+POPU 09        137 N 08 Population of the Legal Service Area
+SERVICE OUTLETS
+CENTLIB 03 146 N 09 Number of central libraries
+BRANLIB 03 149 N 10 Number of branch libraries
+BKMOB 03 152 N 11 Number of bookmobiles
+FULL-TIME EQUIVALENT (FTE) PAID STAFF
+MASTER 09 155 N 13 Number of FTE paid librarians with master’s degrees from 
+programs of library and information studies accredited by the 
+American Library Association. This field consists of 6 
+integers and 2 decimals, with an explicit decimal point.
+LIBRARIAN 09 164 N 14 Total number of FTE employees holding the title of 
+librarian.  This field consists of 6 integers and 2 decimals, 
+with an explicit decimal point.
+OTHPAID 10 173 N 15 All other paid FTE employees.  This field consists of 7
+integers and 2 decimals, with an explicit decimal point.
+TOTPEMP 10 183 N 16 Total paid FTE employees.  This field consists of 7 
+integers and 2 decimals, with an explicit decimal point.
+OPERATING INCOME
+LOCGVT 09 193 N 17 Operating income from local government
+STGVT 09 202 N 18 Operating income from s
+FEDGVT 09 211 N 19 Operating income from federal government
+OTHINCM 09 220 N 20 Other operating income (i.e., income not included in 
+LOCGVT, STGVT, and FEDGVT)
+TOTINCM 10 229 N 21 Total income (includes LOCGVT, STGVT, FEDGVT, and
+OTHINCM)
+OPERATING EXPENDITURES
+SALARIES 09 239 N 22 Salaries and wages for all library staff
+BENEFIT 09 248 N 23 Employee benefits for all library staff
+TOTEXP 09 257 N 24 Total staff expenditures (includes SALARIES and BENEFIT)
+TOTEXPCOL 09 266 N 25 Total expenditures on library collection
+OTHOPEXP 09 275 N 26 Other operating expenditures (i.e., expenditures not included 
+in TOTEXP and TOTEXPCOL)
+TOTOPEXP1 10 284 N 27 Total operating expenditures (includes TOTEXP, 
+TOTEXPCOL, and OTHOPEXP)
+CAPITAL OUTLAY EXPENDITURES
+CAPITAL 09 294 N 28 Expenditures for capital outlay
+LIBRARY COLLECTION
+BKVOL 09 303 N 29 Number of books and serial volumes
+AUDIO 09 312 N 30 Number of audio materials
+VIDEO 09 321 N 32 Number of video materials
+SUBSCRIPT 09 330 N 33 Number of current serial subscriptions
+PUBLIC SERVICE HOURS
+DUPLI 08 339 N 35 Total annual public service hours for all outlets of the public
+library
+LIBRARY SERVICES
+ATTEND 09 347 N 36 Total annual library visits
+REFERENCE 09 356 N 38 Total annual reference transactions
+CIRCULATION
+TOTCIR 09 365 N 39 Total annual circulation transactions
+INTER-LIBRARY LOANS
+LOANTO 06 374 N 40 To
+LOANFM 06 380 N 41 Total annual loans received from other libraries
+CHILDREN’S SERVICES
+KIDCIRCL 09 386 N 42 Total annual circulation (including renewals) of all children's 
+materials in all formats to all users
+KIDATTEND 09 395 N 43 Total annual attendance at all programs intended primarily
+for children. Includes adults who attend programs intended 
+primarily for children
+IDENTIFICATION (continued)
+C_RELATN 02 404 A 7A Interlibrary Relationship Code
+HQ—Headquarters of a system, federation, or cooperative 
+service
+ME—Member of a system, federation, or cooperative 
+service, but not the headquarters
+NO—Not a member of a system, federation, or cooperative
+service
+C_LEGBASE 02 406 A 7B Legal Basis Code
+AP—Combined Academic/Public Library
+CI— Municipal government (city, town, or village)
+CO—County/Parish
+MJ—Multi-jurisdictional
+NL—Native American Tribal Government
+NP—Non-profit Association or Agency
+SC—School District
+SD—Special Library District (authority, board, or 
+commission)
+SL—State Library Agency
+SP—Combined School Media Center/Public Library
+OT—Other
+C_ADMIN 02 408 A 7C Administrative Structure Code
+AO—Administrative Entity Only
+MA—Administrative Entity with multiple direct service outlets 
+where administrative offices are separate
+MO—Administrative Entity with multiple direct service outlets 
+where administrative offices are not separate
+SO—Single Outlet Administrative Entity
+CNTY 17 410 A 4A County of library
+C_FSCS 01 427 A 7D FSCS Public Libra
+ELMATEXP 09 428 N 44 Operating expenditures for library materials in electronic 
+format
+ELACCEXP 09 437 N 45 Operating expenditures for electronic access
+ELMATS 09 446 N 46 Number of library materials in electronic format
+ELSVCACC 01 455 A 47 Library access to electronic services
+Y—Yes
+N—No
+INETACC 01 456 A 48 Library access to the Internet
+Y—Yes
+N—No
+INETUSE 02 457 A 49 Internet Use Code
+ST—Library staff only
+PI—Patrons through a staff intermediary only
+PE—Patrons either directly or through a staff intermediary
+OTHER
+POPU_UNDUP 09 459 N (†)— Unduplicated population of the legal service area for the 
+library.  NCES calculated this value by prorating the library's 
+population of legal service area to the state's total population 
+of legal service areas, and applying the ratio to the state's 
+unduplicated population of legal service areas.
+FSCSKEY 06 468 A 1A Library identification code assigned by NCES
+STABR 02 474 A (†) Post Office state abbreviation code. See appendix H for list 
+of Post Office State Codes.
+PUB_FIPS 02 476 A (†) Two-digit FIPS State Code.  See appendix H for list of FIPS 
+State Codes.
+YR 02 478 A (†) FSCS submission year of public library data
+OBEREG 02 480 A (†) Bureau of Economic Analysis Code (formerly Office of 
+Business Ec
+RSTATUS 01 482 A (†) 1 = Respondent, wit

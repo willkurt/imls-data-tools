@@ -1,0 +1,171 @@
+STABR 02   1 A (†) Post Office state abbreviation code. See appendix D for 
+list of Post Office State Codes.
+FSCSKEY 06   3 A 1A  Library identification code assigned by NCES
+LIBID  20   9 A 01 Library identification code assigned by the state.  NCES
+assigns the FSCSKEY to this field if the state did not
+assign a code.
+LIBNAME 45 29 A 02 Name of library
+ADDRESS 35 74 A 03 Street address of library
+CITY 17 109 A 04 City or town of library
+CNTY 17 126 A 4A County of library
+ZIP 05 143 A 05 Standard five-digit postal zip code for street address of 
+administrative entity.  (Note:  Prior to FY 98, this
+variable was called ZIP1.)
+ZIP4 04 148 A 06 Four-digit postal zip code extension for street address
+of administrative entity. (Note: Prior to FY 98, this 
+variable was called ZIP2.)
+PHONE 10 152 A 07 Telephone number, in following format:  area
+code/exchange/number (for example, 7037315072)
+C_RELATN  02 162 A 7A Interlibrary Relationship Code
+HQ–Headquarters of a system, federation, or cooperative
+service
+ME–Member of a system, federation, or cooperative
+service, but not the headquarters
+NO–Not a member of a system, federation, or
+cooperative  service
+C_LEGBAS   02 164 A 7B Legal Basis Code
+CI–Municipal government (city, town, or village)
+CO–County/Parish
+CC–City/County
+MJ–Multi-jurisdictional
+NL–Native American Tribal Government
+NP–Non-profit Association or Agency
+SC–School District
+SD–Special Library District (authority, board, or
+commission)
+OT–Other
+(Note:  Prior to FY 98, this variable was called 
+C_LEGBASE.)
+C_ADMIN 02 166 A 7C Administrative Structure Code
+MA–Administrative Entity with multiple direct service
+outlets where ad
+C_FSCS 01 168 A 7D FSCS Public Library Definition (public library meets all
+the criteria)
+Y–Yes
+N–No
+GEOCODE 03 169 A 7E Geographic Code
+CI1–City (exactly)
+CI2–City (most nearly)
+CO1–County (exactly)
+CO2–County (most nearly)
+MA1–Metropolitan area (exactly)
+MA2–Metropolitan area (most nearly)
+MC1–Multi-County (exactly)
+MC2–Multi-County (most nearly)
+SD1–School District (exactly)
+SD2–School District (most nearly)
+OTH–Other
+POPULATION
+POPU_LSA 09 172 N 08 Population of the Legal Service Area  (Note:  Prior to
+FY 98, this variable was called POPU.)
+POPU_UND  09 181 N (†) Unduplicated population of the legal service area for the
+library.  NCES prorated this value by calculating the 
+ratio of a library's Population of Legal Service Area to the 
+state's total Population of Legal Service Area, and 
+applying the ratio to the state's Total Unduplicated 
+Population of Legal Service Areas. (Note:  Prior to FY 98, 
+this variable was called POPU_UNDUP.)
+SERVICE OUTLETS
+CENTLIB 03 190 N 09 Number of central libraries
+BRANLIB 03 193 N 10 Number of branch libraries
+BKMOB 03 196 N 11 Number of bookmobiles
+FULL-TIME EQUIVALENT (FTE) PAID STAFF
+MASTER 09 199 N 13 Number of FTE paid librarians with master’s degrees 
+from programs of library and information studies 
+accredited by  the American Library Association. This 
+field consists of six integers and two decimals, with an 
+explicit decimal point. 
+LIBRARIA 09 208 N 14 Total number of FTE employees holding the title of
+librarian.  This
+OTHPAID 10 217 N 15 All other paid FTE employees.  This field consists of 
+seven integers and two decimals, with an explicit decimal 
+point.
+TOTSTAFF 10 227 N 16 Total paid FTE employees.  This field consists of seven
+integers and two decimals, with an explicit decimal point.
+(Note:  Prior to FY 98, this variable was called 
+TOTPEMP.)
+OPERATING INCOME
+LOCGVT 09 237 N 17 Operating income from local government
+STGVT 09 246 N 18 Operating income from state government
+FEDGVT 09 255 N 19 Operating income from federal government
+OTHINCM 09 264 N 20 Other operating income (i.e., income not included in 
+LOCGVT, STGVT, and FEDGVT)
+TOTINCM 10 273 N 21 Total income (includes LOCGVT, STGVT, FEDGVT, 
+and OTHINCM)
+OPERATING EXPENDITURES
+SALARIES 09 283 N 22 Salaries and wages for all library staff
+BENEFIT 09 292 N 23 Employee benefits for all library staff
+STAFFEXP 09 301 N 24 Total staff expenditures (includes SALARIES and
+BENEFIT).  (Note:  Prior to FY 98, this variable was.
+called TOTEXP.)
+TOTEXPCO  09 310 N 25 Total expenditures on library collection. (Note:  Prior  
+to FY 98, this variable was called TOTEXPCOL.)
+OTHOPEXP  09 319 N 26 Other operating expenditures (i.e., expenditures not 
+included in STAFFEXP and TOTEXPCO).
+TOTOPEXP  10 328 N 27 Total operating expenditures (includes STAFFEXP,
+TOTEXPCO, and OTHOPEXP).  (Note:  Prior to 
+FY 98, this variable was called TOTOPEXP1.) 
+CAPITAL OUTLAY EXPENDITURES
+CAPITAL 09 338 N 28 Expenditures for capital outlay
+LIBRARY COLLECTION
+BKVOL 09 347 N 29 Number of books and serial volumes
+AUDIO 09 356 N 30 Number of audio materials
+VIDEO 09 365 N 32 Number of video materials
+SUBSCRIP 09 374 N 33 Number of current seriHRS_OPEN   08 383 N 35 Total annual public service hours for all outlets of the 
+public library. (Note:  Prior to FY 98, this variable 
+was called DUPLI.)
+LIBRARY SERVICES
+VISITS 09 391 N 36 Total annual library visits. (Note:  Prior to FY 98, this 
+variable was called ATTEND.)
+REFERENC   09 400 N 38 Total annual reference transactions. (Note:  Prior to 
+FY 98, this variable was called REFERENCE.)
+CIRCULATION
+TOTCIR 09 409 N 39 Total annual circulation transactions
+INTER-LIBRARY LOANS
+LOANTO 06 418 N 40 Total annual loans provided to other libraries
+LOANFM 06 424 N 41 Total annual loans received from other libraries
+CHILDREN’S SERVICES
+KIDCIRCL 09 430 N 42 Total annual circulation (including renewals) of all 
+children's materials in all formats to all users
+KIDATTEN 09 439 N 43 Total annual attendance at all programs intended 
+primarily for children.  Includes adults who attend 
+programs intended primarily for children.  (Note: Prior
+to FY 98, this variable was called KIDATTEND.)
+ELECTRONIC TECHNOLOGY
+ELMATEXP 09 448 N 44 Operating expenditures for library materials in electronic
+format
+ELACCEXP   09 457 N 45 Operating expenditures for electronic access
+ELMATS 09 466 N 46 Number of library materials in electronic format
+ELSVCACC   01 475 A 47 Library access to electronic services
+Y–Yes
+N–No
+M–Missing, not reported, unknown
+INETACC 01 476 A 48 Library access to the Internet
+Y–Yes
+N–No
+M–Missing, not reported, unknown
+INETUSE 02 477 A 49 Internet Use Code
+ST–Librar
+STFTERMS  06 479 N 50 Internet terminals used by staff only
+GPTERMS 06 485 N 51 Internet terminals used by general public
+OTHER
+PUB_FIPS 02 491 A (†) Two-digit FIPS State Code.  See appendix D for list of 
+FIPS State Codes.
+CNTYFIPS 03 493 A (†) Three-digit FIPS County Code.
+YR_SUB 04 496 A (†) FSCS submission year of public library data in 4-digit
+format (YYYY).  (Note:  Prior to FY 98, this variable
+was called YR.)
+OBEREG 02 500 A (†) Bureau of Economic Analysis Code (formerly, Office of 
+Business Economics). 
+00–U.S. Service Schools
+01–New England - CT ME MA NH RI VT
+02–Mid East - DE DC MD NJ NY PA
+03–Great Lakes - IL IN MI OH WI
+04–Plains - IA KS MN MO NE ND SD
+05–Southeast - AL AR FL GA KY LA MS NC SC TN 
+VA WV
+06–Southwest - AZ NM OK TX
+07–Rocky Mountains - CO ID MT UT WY
+08–Far West - AK CA HI NV OR WA
+09–Outlying Areas - AS FM GU MH MP PR PW VI
+RSTATUS 01 502 A (†) 1–Resp

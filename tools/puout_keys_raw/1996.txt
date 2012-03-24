@@ -1,0 +1,39 @@
+K_DECTOP 06 1 A 1A Outlet identification code assigned by NCES.  Outlets of an 
+administrative entity have the same K_DECTOP code as 
+their administrative entity.  The outlet is separately identified 
+by a unique 3-digit suffix called K_SEQ.  Note:  The 
+K_DECTOP code is the same as the FSCSKEY code on the 
+Public Library Data File.
+LIB_CODE 20 7 A 01 Outlet identification code assigned by the state.  NCES
+assigns the K_DECTOP code to this field if the state did not 
+assign a code.
+LIB_NAME 45 27 A 02 Name of outlet
+LIB_ADDR 35 72 A 03 Complete street address of outlet
+LIB_CITY 17        107 A 04 City or town of outlet
+LIB_ZIP 05        124 A 06 Standard five-digit postal zip code for street address of outlet
+LIB_ZIP4 04        129 A 07 Four-digit postal zip code extension for street address of 
+outlet
+LIB_PHONE 10        133 A 08 Telephone number of the outlet, in following format:  area 
+code/exchange/number (for example, 7037315072)
+LIB_CNTY 17        143 A 05 County of outlet
+C_OUT_TYP 02        160 A 09 Outlet Type
+CE—Central Library
+BR—Branch Library
+BS—Bookmobile(s)
+BM—Books-by-Mail Only
+C_MSA 02       162 A 10 Metropolitan Status Code
+CC—Within the city limits of the central city of a Metropolitan 
+Area
+NC—Metropolitan Area, but not within central city limits
+NO—Not in a Metropolitan Area
+UK—Unknown
+C_SER_POP 01       164 A 11 Population of the Legal Service Area by Outle
+LIB_NUM_BM 02 165 N 12 Number of bookmobiles in the bookmobile outlet record 
+(record with C_OUT_TYP = BS)
+K_SEQ 03 167 A (†) Outlet's unique three-digit suffix to K_DECTOP code, 
+assigned by NCES. 
+STABR 02 170 A (†) Two-character Post Office State Code for the outlet.  See
+appendix H for list of Post Office State Codes.
+PUB_FIPS 02 172 A (†) Two-digit FIPS State Code.  See appendix H for list of FIPS 
+State Codes.
+YR 02 174 A (†) FSCS submission
